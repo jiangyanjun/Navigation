@@ -1,0 +1,465 @@
+
+ 
+记录时间：2017-07-06 19:55:24,071 
+线程ID:[12] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【ProcessRequest】产生异常：
+                Action参数：obj={
+  "method": "getcurrentobj",
+  "parameter": "42005d9e49c549a9902134f6ba17596f",
+  "parameter2": null
+}&__EntityParamsList__={"method":"getcurrentobj","parameter":"42005d9e49c549a9902134f6ba17596f","parameter2":null}
+               Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499341961800
+nonce: 1431286300
+signature: 5CC84C85D8DF61A17215F206F65E3B79
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.Data.SQLite.SQLiteException (0x80004005): SQL logic error or missing database
+no such column: A.ID
+   在 System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   在 System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   在 System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NET.DataAccessLayer.Common.SqlMapper.<QueryInternal>d__31`1.MoveNext() 位置 E:\工作室\sh\Mmmxa.So\navigation\三层架构\DataLayer\Common\Dapper.cs:行号 697
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NET.DataAccessLayer.Common.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 E:\工作室\sh\Mmmxa.So\navigation\三层架构\DataLayer\Common\Dapper.cs:行号 654
+   在 DataBase.DBHelper.ReadCollection[T](String sql, DynamicParameters p) 位置 E:\工作室\sh\Mmmxa.So\navigation\三层架构\DataLayer\Common\DBHelper.cs:行号 22
+   在 DataLayer.DalBase`1.Find[T](String where) 位置 E:\工作室\sh\Mmmxa.So\navigation\三层架构\DataLayer\DalBase.cs:行号 214
+   在 DataLayer.DalBase`1.Query[T](String where) 位置 E:\工作室\sh\Mmmxa.So\navigation\三层架构\DataLayer\DalBase.cs:行号 175
+   在 Business.BaseBLL`1.FuncFind(String Id) 位置 E:\工作室\sh\Mmmxa.So\navigation\三层架构\Business\BaseBLL.cs:行号 76
+   在 Business.BaseBLL`1.Find(String Id) 位置 E:\工作室\sh\Mmmxa.So\navigation\三层架构\Business\BaseBLL.cs:行号 72
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController._processrequest(String method, String parameter, String parameter2)
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.ProcessRequest(JObject obj)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-06 21:04:06,797 
+线程ID:[10] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【ProcessRequest】产生异常：
+                Action参数：obj={
+  "method": "geturlentity",
+  "parameter": "84d1716d6e55d47",
+  "parameter2": null
+}&__EntityParamsList__={"method":"geturlentity","parameter":"84d1716d6e55d47","parameter2":null}
+               Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499346246766
+nonce: 1941398100
+signature: 359C039C88D413E13158C79AAEFC5686
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.Data.SQLite.SQLiteException (0x80004005): SQL logic error or missing database
+unrecognized token: "84d1716d6e55d47"
+   在 System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   在 System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   在 System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   在 System.Data.SQLite.SQLiteDataReader.NextResult()
+   在 System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.SQLite.SQLiteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NET.DataAccessLayer.Common.SqlMapper.<QueryInternal>d__31`1.MoveNext() 位置 E:\工作室\sh\Mmmxa.So\navigation\三层架构\DataLayer\Common\Dapper.cs:行号 697
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 NET.DataAccessLayer.Common.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 E:\工作室\sh\Mmmxa.So\navigation\三层架构\DataLayer\Common\Dapper.cs:行号 654
+   在 DataBase.DBHelper.ReadCollection[T](String sql, DynamicParameters p) 位置 E:\工作室\sh\Mmmxa.So\navigation\三层架构\DataLayer\Common\DBHelper.cs:行号 22
+   在 DataLayer.DalBase`1.Find[T](String where) 位置 E:\工作室\sh\Mmmxa.So\navigation\三层架构\DataLayer\DalBase.cs:行号 214
+   在 Business.U_Url_ListBLL.FindPrimaryId(String Id)
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController._processrequest(String method, String parameter, String parameter2) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 376
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.ProcessRequest(JObject obj) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 349
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-06 23:06:42,108 
+线程ID:[23] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【UrlTypeUpdate】产生异常：
+                Action参数：obj={
+  "UserId": "admin",
+  "Id": "84d1716d6e12d4",
+  "stringArry": "System.String[]"
+}&__EntityParamsList__=UserId=admin&Id=84d1716d6e12d4&stringArry=System.String%5B%5D
+               Http请求头:Accept-Encoding: gzip
+Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499353498911
+nonce: 286214864
+signature: 52F136DCF7254AC0AC231E5B31CD535B
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 与“Business.U_Url_ListBLL.UrlTypeUpdate(string[], string, string)”最匹配的重载方法具有一些无效参数
+   在 CallSite.Target(Closure , CallSite , U_Url_ListBLL , Object , String , String )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute4[T0,T1,T2,T3,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3)
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.UrlTypeUpdate(JObject obj)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-06 23:15:43,308 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【UrlTypeUpdate】产生异常：
+                Action参数：obj={
+  "Parameter1": null,
+  "Parameter2": null,
+  "Parameter3": null,
+  "Parameter4": null,
+  "Parameter5": null,
+  "UserId": "admin",
+  "Id": "84d1716d6e12d4",
+  "stringArry": [
+    "88b294c281fe48588fcfeb213ffb4f70",
+    "a1d46fb887c5422ba87d4cdb416238c8",
+    "d70876d57dd74b889c35d755fd7615a1",
+    "208fe8e3a9ea4a66a1385ffd7363586e",
+    "c21dc08769d54146927b3b0baacee252",
+    "af29788f0a014b11955b3db29febf2ee",
+    "8fc68e198a844f62b734615a04b038c4",
+    "38cff970b1a9450f8e6a8bdf0787e291",
+    "e0869f98aa1b42018c9d70077049076f",
+    "409c88e091074c4db08cdae7087b6b89",
+    "daba59b8fa7f43d88502f34d781bf4b9",
+    "b1c2b708981f470e81a7d5885d9f735d",
+    "d6a8622284f74d3d97a2ef453dc77917",
+    "eccc73a6251543c29eafee85c624bab1",
+    "e877a0b853f2457784e62b999b804766",
+    "e09203d487ba49cdb011a3de76361dd6",
+    "8327eb647e2e4716a46246d339ca47ff",
+    "78aa9ad86e694bcf93020e5874957ab0",
+    "f54605ab15cb422ea1b7cdf22a8346c5",
+    "74f39afd06b040fa991e6d580850504b",
+    "0445bd3c0c4642a485ce03201cc51f32",
+    "e04094dc010f47dd814f5b29b4cce664",
+    "9ad10a8f65d14a7e80d28b63df7180e9",
+    "86a24af2c8514eeb9ced64ac4175d885"
+  ]
+}&__EntityParamsList__={"Parameter1":null,"Parameter2":null,"Parameter3":null,"Parameter4":null,"Parameter5":null,"UserId":"admin","Id":"84d1716d6e12d4","stringArry":["88b294c281fe48588fcfeb213ffb4f70","a1d46fb887c5422ba87d4cdb416238c8","d70876d57dd74b889c35d755fd7615a1","208fe8e3a9ea4a66a1385ffd7363586e","c21dc08769d54146927b3b0baacee252","af29788f0a014b11955b3db29febf2ee","8fc68e198a844f62b734615a04b038c4","38cff970b1a9450f8e6a8bdf0787e291","e0869f98aa1b42018c9d70077049076f","409c88e091074c4db08cdae7087b6b89","daba59b8fa7f43d88502f34d781bf4b9","b1c2b708981f470e81a7d5885d9f735d","d6a8622284f74d3d97a2ef453dc77917","eccc73a6251543c29eafee85c624bab1","e877a0b853f2457784e62b999b804766","e09203d487ba49cdb011a3de76361dd6","8327eb647e2e4716a46246d339ca47ff","78aa9ad86e694bcf93020e5874957ab0","f54605ab15cb422ea1b7cdf22a8346c5","74f39afd06b040fa991e6d580850504b","0445bd3c0c4642a485ce03201cc51f32","e04094dc010f47dd814f5b29b4cce664","9ad10a8f65d14a7e80d28b63df7180e9","86a24af2c8514eeb9ced64ac4175d885"]}
+               Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499354137906
+nonce: 93582882
+signature: 46DC56C9C1BD09BB17189FCB159A14B6
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.MissingMethodException: 找不到方法:“Int32 Business.U_Url_ListBLL.UrlTypeUpdate(System.String[], System.String, System.String)”。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.UrlTypeUpdate(JObject obj)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-06 23:15:43,534 
+线程ID:[14] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【UrlTypeUpdate】产生异常：
+                Action参数：obj={
+  "UserId": "admin",
+  "Id": "84d1716d6e12d4",
+  "stringArry": "System.String[]"
+}&__EntityParamsList__=UserId=admin&Id=84d1716d6e12d4&stringArry=System.String%5B%5D
+               Http请求头:Accept-Encoding: gzip
+Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499354143482
+nonce: 27529441
+signature: B90F190D49C43529D8173E35162F445B
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.MissingMethodException: 找不到方法:“Int32 Business.U_Url_ListBLL.UrlTypeUpdate(System.String[], System.String, System.String)”。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.UrlTypeUpdate(JObject obj)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-06 23:15:55,325 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【UrlTypeUpdate】产生异常：
+                Action参数：obj={
+  "Parameter1": null,
+  "Parameter2": null,
+  "Parameter3": null,
+  "Parameter4": null,
+  "Parameter5": null,
+  "UserId": "admin",
+  "Id": "84d1716d6e12d4",
+  "stringArry": [
+    "88b294c281fe48588fcfeb213ffb4f70",
+    "a1d46fb887c5422ba87d4cdb416238c8",
+    "d70876d57dd74b889c35d755fd7615a1",
+    "208fe8e3a9ea4a66a1385ffd7363586e",
+    "c21dc08769d54146927b3b0baacee252",
+    "af29788f0a014b11955b3db29febf2ee",
+    "8fc68e198a844f62b734615a04b038c4",
+    "38cff970b1a9450f8e6a8bdf0787e291",
+    "e0869f98aa1b42018c9d70077049076f",
+    "409c88e091074c4db08cdae7087b6b89",
+    "daba59b8fa7f43d88502f34d781bf4b9",
+    "b1c2b708981f470e81a7d5885d9f735d",
+    "d6a8622284f74d3d97a2ef453dc77917",
+    "eccc73a6251543c29eafee85c624bab1",
+    "e877a0b853f2457784e62b999b804766",
+    "e09203d487ba49cdb011a3de76361dd6",
+    "8327eb647e2e4716a46246d339ca47ff",
+    "78aa9ad86e694bcf93020e5874957ab0",
+    "f54605ab15cb422ea1b7cdf22a8346c5",
+    "74f39afd06b040fa991e6d580850504b",
+    "0445bd3c0c4642a485ce03201cc51f32",
+    "e04094dc010f47dd814f5b29b4cce664",
+    "9ad10a8f65d14a7e80d28b63df7180e9",
+    "86a24af2c8514eeb9ced64ac4175d885"
+  ]
+}&__EntityParamsList__={"Parameter1":null,"Parameter2":null,"Parameter3":null,"Parameter4":null,"Parameter5":null,"UserId":"admin","Id":"84d1716d6e12d4","stringArry":["88b294c281fe48588fcfeb213ffb4f70","a1d46fb887c5422ba87d4cdb416238c8","d70876d57dd74b889c35d755fd7615a1","208fe8e3a9ea4a66a1385ffd7363586e","c21dc08769d54146927b3b0baacee252","af29788f0a014b11955b3db29febf2ee","8fc68e198a844f62b734615a04b038c4","38cff970b1a9450f8e6a8bdf0787e291","e0869f98aa1b42018c9d70077049076f","409c88e091074c4db08cdae7087b6b89","daba59b8fa7f43d88502f34d781bf4b9","b1c2b708981f470e81a7d5885d9f735d","d6a8622284f74d3d97a2ef453dc77917","eccc73a6251543c29eafee85c624bab1","e877a0b853f2457784e62b999b804766","e09203d487ba49cdb011a3de76361dd6","8327eb647e2e4716a46246d339ca47ff","78aa9ad86e694bcf93020e5874957ab0","f54605ab15cb422ea1b7cdf22a8346c5","74f39afd06b040fa991e6d580850504b","0445bd3c0c4642a485ce03201cc51f32","e04094dc010f47dd814f5b29b4cce664","9ad10a8f65d14a7e80d28b63df7180e9","86a24af2c8514eeb9ced64ac4175d885"]}
+               Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499354155313
+nonce: 1552504613
+signature: EA1E9BEDBF34480A60C8CE32C79711DE
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.MissingMethodException: 找不到方法:“Int32 Business.U_Url_ListBLL.UrlTypeUpdate(System.String[], System.String, System.String)”。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.UrlTypeUpdate(JObject obj)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-06 23:15:55,422 
+线程ID:[6] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【UrlTypeUpdate】产生异常：
+                Action参数：obj={
+  "UserId": "admin",
+  "Id": "84d1716d6e12d4",
+  "stringArry": "System.String[]"
+}&__EntityParamsList__=UserId=admin&Id=84d1716d6e12d4&stringArry=System.String%5B%5D
+               Http请求头:Accept-Encoding: gzip
+Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499354155410
+nonce: 855121059
+signature: 56A3D6BB6A096A105F4213F0A12A10EF
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.MissingMethodException: 找不到方法:“Int32 Business.U_Url_ListBLL.UrlTypeUpdate(System.String[], System.String, System.String)”。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.UrlTypeUpdate(JObject obj)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-06 23:16:34,999 
+线程ID:[6] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【UrlTypeUpdate】产生异常：
+                Action参数：obj={
+  "Parameter1": null,
+  "Parameter2": null,
+  "Parameter3": null,
+  "Parameter4": null,
+  "Parameter5": null,
+  "UserId": "admin",
+  "Id": "84d1716d6e12d4",
+  "stringArry": [
+    "88b294c281fe48588fcfeb213ffb4f70",
+    "a1d46fb887c5422ba87d4cdb416238c8",
+    "d70876d57dd74b889c35d755fd7615a1",
+    "208fe8e3a9ea4a66a1385ffd7363586e",
+    "c21dc08769d54146927b3b0baacee252",
+    "af29788f0a014b11955b3db29febf2ee",
+    "8fc68e198a844f62b734615a04b038c4",
+    "38cff970b1a9450f8e6a8bdf0787e291",
+    "e0869f98aa1b42018c9d70077049076f",
+    "409c88e091074c4db08cdae7087b6b89",
+    "daba59b8fa7f43d88502f34d781bf4b9",
+    "b1c2b708981f470e81a7d5885d9f735d",
+    "d6a8622284f74d3d97a2ef453dc77917",
+    "eccc73a6251543c29eafee85c624bab1",
+    "e877a0b853f2457784e62b999b804766",
+    "e09203d487ba49cdb011a3de76361dd6",
+    "8327eb647e2e4716a46246d339ca47ff",
+    "78aa9ad86e694bcf93020e5874957ab0",
+    "f54605ab15cb422ea1b7cdf22a8346c5",
+    "74f39afd06b040fa991e6d580850504b",
+    "0445bd3c0c4642a485ce03201cc51f32",
+    "e04094dc010f47dd814f5b29b4cce664",
+    "9ad10a8f65d14a7e80d28b63df7180e9",
+    "86a24af2c8514eeb9ced64ac4175d885"
+  ]
+}&__EntityParamsList__={"Parameter1":null,"Parameter2":null,"Parameter3":null,"Parameter4":null,"Parameter5":null,"UserId":"admin","Id":"84d1716d6e12d4","stringArry":["88b294c281fe48588fcfeb213ffb4f70","a1d46fb887c5422ba87d4cdb416238c8","d70876d57dd74b889c35d755fd7615a1","208fe8e3a9ea4a66a1385ffd7363586e","c21dc08769d54146927b3b0baacee252","af29788f0a014b11955b3db29febf2ee","8fc68e198a844f62b734615a04b038c4","38cff970b1a9450f8e6a8bdf0787e291","e0869f98aa1b42018c9d70077049076f","409c88e091074c4db08cdae7087b6b89","daba59b8fa7f43d88502f34d781bf4b9","b1c2b708981f470e81a7d5885d9f735d","d6a8622284f74d3d97a2ef453dc77917","eccc73a6251543c29eafee85c624bab1","e877a0b853f2457784e62b999b804766","e09203d487ba49cdb011a3de76361dd6","8327eb647e2e4716a46246d339ca47ff","78aa9ad86e694bcf93020e5874957ab0","f54605ab15cb422ea1b7cdf22a8346c5","74f39afd06b040fa991e6d580850504b","0445bd3c0c4642a485ce03201cc51f32","e04094dc010f47dd814f5b29b4cce664","9ad10a8f65d14a7e80d28b63df7180e9","86a24af2c8514eeb9ced64ac4175d885"]}
+               Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499354194990
+nonce: 1991370857
+signature: AE74B09B36F3FD4BD6D1FD71F41B3808
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.MissingMethodException: 找不到方法:“Int32 Business.U_Url_ListBLL.UrlTypeUpdate(System.String[], System.String, System.String)”。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.UrlTypeUpdate(JObject obj)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-06 23:16:35,085 
+线程ID:[17] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【UrlTypeUpdate】产生异常：
+                Action参数：obj={
+  "UserId": "admin",
+  "Id": "84d1716d6e12d4",
+  "stringArry": "System.String[]"
+}&__EntityParamsList__=UserId=admin&Id=84d1716d6e12d4&stringArry=System.String%5B%5D
+               Http请求头:Accept-Encoding: gzip
+Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499354195068
+nonce: 1564955774
+signature: B33A45E9E32032EC54971742D5B7CECC
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.MissingMethodException: 找不到方法:“Int32 Business.U_Url_ListBLL.UrlTypeUpdate(System.String[], System.String, System.String)”。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.UrlTypeUpdate(JObject obj)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()

@@ -1,0 +1,276 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UrlEdit</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    @*<link rel="icon" href="http://www.kebue.com//images/kebue.ico">*@
+    <link href="~/Content/Admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/Admin/css/font-awesome.css" rel="stylesheet">
+    <link href="~/Content/Admin/css/plugins/jqgrid/ui.jqgrid.css" rel="stylesheet">
+    <link href="~/Content/Admin/css/animate.css" rel="stylesheet">
+    <link href="~/Content/Admin/css/style.css" rel="stylesheet">
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <hr />
+            <div class="col-lg-6">
+                <div class="input-group" id="searchArea">
+                    <label class="btn btn-info btn-rounded"><input type="radio" name="radStatus" onclick="infoLoad()" value="0">不通</label>&nbsp;&nbsp;
+                    <label class="btn btn-success btn-rounded"><input type="radio" name="radStatus" onclick="infoLoad()" value="1" checked>正常</label>&nbsp;&nbsp;
+                    <label class="btn btn-warning btn-rounded"><input type="radio" name="radStatus" onclick="infoLoad()" value="2">涉黄</label>&nbsp;&nbsp;
+                    <label class="btn btn-danger btn-rounded btn-outline"><input type="radio" name="radStatus" onclick="infoLoad()" value="3">删除</label>&nbsp;&nbsp;
+                    <label class="btn btn-danger btn-rounded"><input type="radio" name="radStatus" onclick="infoLoad()" value="4">危险</label>&nbsp;&nbsp;
+                    <label class="btn btn-primary btn-rounded"><input type="radio" name="radStatus" onclick="infoLoad()" value="5">新建</label>&nbsp;&nbsp;
+                    <label class="btn btn-default btn-rounded"><input type="radio" name="radStatus" onclick="infoLoad()" value="6">未定义</label>&nbsp;&nbsp;
+                </div>
+                <br />
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="模糊搜索……" id="txtSearchUrl">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" onclick="infoLoad()">Search Go!</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 ibox ibox-content">
+                <div class="jqGrid_wrapper">
+                    <table id="table_list"></table>
+                    <div id="pager_list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myStatusEditModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        网址状态修改
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <label class="btn btn-info btn-rounded">
+                        <input type="radio" name="radStatus" value="0">不通
+                    </label>
+                    <label class="btn btn-success btn-rounded">
+                        <input type="radio" name="radStatus" value="1">正常
+                    </label>
+                    <label class="btn btn-warning btn-rounded">
+                        <input type="radio" name="radStatus" value="2">涉黄
+                    </label>
+                    <label class="btn btn-danger btn-rounded btn-outline">
+                        <input type="radio" name="radStatus" value="3">删除
+                    </label>
+                    <label class="btn btn-danger btn-rounded">
+                        <input type="radio" name="radStatus" value="4">危险
+                    </label>
+                    @*<label class="btn btn-primary btn-rounded">
+                            <input type="radio" name="radStatus" value="5">新建
+                        </label>*@
+                    <label class="btn btn-default btn-rounded">
+                        <input type="radio" name="radStatus" value="6">未定义
+                    </label>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" id="hidId" />
+                    <input type="hidden" id="hidStatus" />
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        关闭
+                    </button>
+                    <button type="button" class="btn btn-primary" id="btnStatusEdit">
+                        提交更改
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+    <script src="~/Content/Admin/js/jquery.min.js"></script>
+    <script src="~/Content/Admin/js/bootstrap.min.js"></script>
+    <script src="~/Content/Admin/js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="~/Content/Admin/js/plugins/jqgrid/i18n/grid.locale-cn.js"></script>
+    <script src="~/Content/Admin/js/plugins/jqgrid/jquery.jqGrid.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            infoLoad();
+            $("#btnStatusEdit").click(function () {
+                var status = $("input[name='radStatus']:checked").val();
+                var id = $("#hidId").val();
+                if (status != $("#hidStatus").val() && id != null) {
+                    $.post("/AjaRequestAPI/UpadateUrlStatus", { Id: id, Status: status }, function (result) {
+                        $("#hidId").val(id);
+                        $("#hidStatus").val(status);
+                        $("#btnStatus" + id).removeClass("btn btn-info btn-rounded btn-success btn-warning btn-danger   btn-outlinebtn-danger  btn-primary btn-default");
+                        if (Number(status == 0)) {
+                            $("#btnStatus" + id).addClass("btn btn-info btn-rounded");
+                        } else if (Number(status == 1)) {
+                            $("#btnStatus" + id).addClass("btn btn-success btn-rounded");
+                        } else if (Number(status == 2)) {
+                            $("#btnStatus" + id).addClass("btn btn-warning btn-rounded");
+                        } else if (Number(status == 3)) {
+                            $("#btnStatus" + id).addClass("btn btn-danger btn-rounded btn-outline");
+                        } else if (Number(status == 4)) {
+                            $("#btnStatus" + id).addClass("btn btn-danger btn-rounded");
+                        } else if (Number(status == 5)) {
+                            $("#btnStatus" + id).addClass("btn btn-primary btn-rounded");
+                        } else if (Number(status == 6)) {
+                            $("#btnStatus" + id).addClass("btn btn-default btn-rounded");
+                        }
+                        $("#btnStatus" + id).html(result)
+                    });
+                }
+                $('#myStatusEditModal').modal('hide');
+            });
+        });
+        function infoLoad() {
+            BindInitialization("&key=" + $("#searchArea [name='radStatus']:checked").val() + "&key2=" + $("#txtSearchUrl").val());
+        }
+        function BindInitialization(parameter) {
+            var index = parent.layer.load(0, { shade: false }); //0代表加载的风格，支持0-2
+            var url = "/Content/Ajax/HandlerServices.ashx?method=geturlalldata";
+            $.getJSON("" + url + parameter, function (data) {
+                PageInit(data);
+                $("#table_list").jqGrid('clearGridData');
+                $("#table_list").jqGrid('setGridParam', { data: data });
+                $("#table_list").trigger('reloadGrid');
+                parent.layer.close(index);
+            });
+        }
+        function btnSortSave(id) {
+            var v = $("#txtSort_" + id).val();
+            if (v != null && v != "" && v.length > 0 && v != undefined) {
+                $.post("/AjaRequestAPI/UpadateValue", { Id: id, Value: v, type: 1 }, function (result) {
+                    $("#txtSort_" + id).val(v);
+                    alert('保存成功');
+                });
+            }
+        }
+        function UrlNameUpdateSave(id) {
+            var v = $("#txtName_" + id).val();
+            if (v != null && v != "" && v.length > 0 && v != undefined) {
+                $.post("/AjaRequestAPI/UpadateValue", { Id: id, Value: v, type: 2 }, function (result) {
+                    $("#txtName_" + id).val(v);
+                    alert('保存成功');
+                });
+            }
+        }
+        function UrlUpdateSave(id) {
+            var v = $("#txtUrl_" + id).val();
+            if (v != null && v != "" && v.length > 0 && v != undefined) {
+                $.post("/AjaRequestAPI/UpadateValue", { Id: id, Value: v, type: 3 }, function (result) {
+                    $("#txtUrl_" + id).val(v);
+                    alert('保存成功');
+                });
+            }
+        }
+        function UrlSourceUpdateSave(id) {
+            var v = $("#txtSource_" + id).val();
+            if (v != null && v != "" && v.length > 0 && v != undefined) {
+                $.post("/AjaRequestAPI/UpadateValue", { Id: id, Value: v, type: 4 }, function (result) {
+                    $("#txtSource_" + id).val(v);
+                    alert('保存成功');
+                });
+            }
+        }
+        function UrlTitleUpdateSave(id) {
+            var v = $("#txtSource_" + id).val();
+            if (v != null && v != "" && v.length > 0 && v != undefined) {
+                $.post("/AjaRequestAPI/UpadateValue", { Id: id, Value: v, type: 5 }, function (result) {
+                    $("#txtSource_" + id).val(v);
+                    alert('保存成功');
+                });
+            }
+        }
+        function PageInit(data) {
+            $.jgrid.defaults.styleUI = 'Bootstrap';
+            $("#table_list").jqGrid({
+                data: data,
+                datatype: "local",
+                height: 450,
+                autowidth: true,
+                shrinkToFit: true,
+                rowNum: 20,
+                rowList: [10, 20, 30, 50],
+                colNames: ['名称', '操作', '排序', '状态', 'URL', '类型', '来源', 'Title'],
+                colModel: [
+                 {
+                     name: 'Name',
+                     index: 'Name',
+                     width: 120,
+                 },
+                 {
+                     name: 'Operation',
+                     index: 'Operation',
+                     width: 30,
+                 },
+                 {
+                     name: 'SortDesc',
+                     index: 'SortDesc',
+                     width: 60,
+                 },
+                 {
+                     name: 'Status',
+                     index: 'Status',
+                     width: 40,
+                 },
+                 {
+                     name: 'Url',
+                     index: 'Url',
+                     width: 150
+                 },
+                 {
+                     name: 'Types',
+                     index: 'Types',
+                     width: 40,
+                 },
+                 {
+                     name: 'Source',
+                     index: 'Source',
+                     width: 100,
+                 },
+                 {
+                     name: 'Title',
+                     index: 'Title',
+                     width: 80,
+                 }
+                ],
+                pager: "#pager_list",
+                viewrecords: true,
+                caption: "网址管理"
+            });
+            $(window).bind('resize', function () {
+                var width = $('.jqGrid_wrapper').width();
+                $('#table_list').setGridWidth(width);
+            });
+        }
+        function myStatusEdit(id) {
+            $("#hidId").val(id);
+            var parameter = "&key=" + id;
+            var url = "/Content/Ajax/HandlerServices.ashx?method=getcurrentobj";
+            $.getJSON("" + url + parameter, function (data) {
+                $(":radio[name='radStatus'][value='" + data.Status + "']").prop("checked", "checked");
+                $("#hidStatus").val(data.Status);
+                $('#myStatusEditModal').modal('show');
+            });
+        }
+        function BtnClearClass(id) {
+            $("#txtfwxtest_" + id).removeClass("btn-info");
+        }
+    </script>
+</body>
+</html>

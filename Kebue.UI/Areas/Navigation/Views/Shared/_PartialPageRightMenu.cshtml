@@ -1,0 +1,23 @@
+﻿<link href="/Areas/Navigation/Plugins/Right_Menu/skin/default/css/base.css" rel="stylesheet" />
+<script type="text/javascript" src="../../Areas/Navigation/Plugins/Right_Menu/skin/default/js/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="../../Areas/Navigation/Plugins/Right_Menu/skin//default/js/common.js"></script>
+
+<script type="text/javascript">
+    var saveMessageUrl = "/Ajax/LeaveAMessage";//提交留言
+        var kebue_com_account_kebue_url = "http://www.kebue.com";
+        ds.Dialog.defaults.iconBasePath = '../../Areas/Navigation/Plugins/Right_Menu/skin//default/images/';
+        function showInfoTip(content, type, onhide) {
+            var icons = { success: 'success.png', info: 'info.png' };
+            var icon = icons[type] || 'error.png';
+            return ds.dialog({
+                title: '消息提示',
+                content: content,
+                onhide: onhide,
+                onyes: true,
+                icon: icon,
+                timeout: 3,
+                width: 200
+            });
+        }
+        ds.loadScript('../../Areas/Navigation/Plugins/Right_Menu/skin/default/js/quick_links.js');
+</script>

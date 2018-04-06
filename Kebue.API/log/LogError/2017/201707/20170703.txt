@@ -1,0 +1,402 @@
+
+ 
+记录时间：2017-07-03 18:22:19,905 
+线程ID:[30] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【PerformTask】产生异常：
+                Action参数：method=&__EntityParamsList__={"method":"icom","limit":0,"offset":0,"pare":null,"starTime":null,"endTime":null}
+               Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499077339705
+nonce: 1103086026
+signature: 42C47DBC2797947F7583594F55B4F73E
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.PerformTask(String method) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 511
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-03 18:22:20,437 
+线程ID:[27] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【PerformTask】产生异常：
+                Action参数：method=&__EntityParamsList__=method=icom&limit=0&offset=0
+               Http请求头:Accept-Encoding: gzip
+Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499077340376
+nonce: 339649031
+signature: 9ADB94153E66408536EFBEDCF74F0E16
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.PerformTask(String method) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 511
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-03 18:22:20,466 
+线程ID:[14] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【PerformTask】产生异常：
+                Action参数：method=&__EntityParamsList__={"method":"web","limit":0,"offset":0,"pare":null,"starTime":null,"endTime":null}
+               Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499077340442
+nonce: 1370593087
+signature: 310A48B79624F3DB263E2B61C0B0F8A1
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.PerformTask(String method) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 511
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-03 18:22:20,580 
+线程ID:[27] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【PerformTask】产生异常：
+                Action参数：method=&__EntityParamsList__=method=web&limit=0&offset=0
+               Http请求头:Accept-Encoding: gzip
+Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499077340550
+nonce: 129205660
+signature: 6D9DB826E918C0C4470271F4D59A250E
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.PerformTask(String method) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 511
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-03 18:22:20,609 
+线程ID:[14] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【PerformTask】产生异常：
+                Action参数：method=&__EntityParamsList__={"method":"url","limit":0,"offset":0,"pare":null,"starTime":null,"endTime":null}
+               Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499077340584
+nonce: 1766577507
+signature: ACD187B0FFE73EEEAEFEF8844D85CDC2
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.PerformTask(String method) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 511
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-03 18:22:20,723 
+线程ID:[27] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【PerformTask】产生异常：
+                Action参数：method=&__EntityParamsList__=method=url&limit=0&offset=0
+               Http请求头:Accept-Encoding: gzip
+Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499077340692
+nonce: 525190080
+signature: D8DB42A5DDCFD75EF374C7D45F68FA24
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.PerformTask(String method) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 511
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-03 19:05:34,426 
+线程ID:[9] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【PerformTask】产生异常：
+                Action参数：method=&__EntityParamsList__={"method":"icom","limit":0,"offset":0,"pare":null,"starTime":null,"endTime":null}
+               Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499079934398
+nonce: 1399124932
+signature: 7A1F016703122320362E06FFC9D2A08A
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.PerformTask(String method) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 511
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-03 19:05:34,635 
+线程ID:[12] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【PerformTask】产生异常：
+                Action参数：method=&__EntityParamsList__=method=icom&limit=0&offset=0
+               Http请求头:Accept-Encoding: gzip
+Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499079934608
+nonce: 774885752
+signature: 5EA77784654E6A1D97B21C9EA12F757F
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.PerformTask(String method) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 511
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-03 19:05:34,646 
+线程ID:[12] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【PerformTask】产生异常：
+                Action参数：method=&__EntityParamsList__={"method":"web","limit":0,"offset":0,"pare":null,"starTime":null,"endTime":null}
+               Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499079934637
+nonce: 1097725798
+signature: 9FF65398645A88445D293CE2845D1A40
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.PerformTask(String method) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 511
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-03 19:05:34,673 
+线程ID:[12] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【PerformTask】产生异常：
+                Action参数：method=&__EntityParamsList__=method=web&limit=0&offset=0
+               Http请求头:Accept-Encoding: gzip
+Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499079934662
+nonce: 1227933862
+signature: ADDB5F32388222A5457CC4B808F619EE
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.PerformTask(String method) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 511
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-03 19:05:34,681 
+线程ID:[10] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【PerformTask】产生异常：
+                Action参数：method=&__EntityParamsList__={"method":"url","limit":0,"offset":0,"pare":null,"starTime":null,"endTime":null}
+               Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499079934675
+nonce: 780245980
+signature: 28785DCF335F0D73956E15305351AD05
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.PerformTask(String method) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 511
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-03 19:05:34,709 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【PerformTask】产生异常：
+                Action参数：method=&__EntityParamsList__=method=url&limit=0&offset=0
+               Http请求头:Accept-Encoding: gzip
+Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499079934701
+nonce: 2032353863
+signature: B026BC161BD32F2EC10246E7907DF5BB
+
+                客户端IP：::1,
+                HttpMethod:POST
+                    
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.PerformTask(String method) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 511
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()

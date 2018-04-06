@@ -1,0 +1,21 @@
+﻿@using PhysicalLayer
+@{
+    var menuList = ViewBag.menu;
+    var t = ViewBag.menuType;
+    if (t != null && menuList != null)
+    {
+        foreach (string x in t)
+        {
+            var menuTypeList = menuList.FindAll(n => n.Types == x);
+            if (menuTypeList != null)
+            {
+                <div title="@x">
+                    @foreach (S_Menu item in menuTypeList)
+                    {
+                        <a href="javascript:void(0);" src="@item.Url" class="cs-navi-tab">@item.Name</a>
+                    }
+                </div>
+            }
+        }
+    }
+}

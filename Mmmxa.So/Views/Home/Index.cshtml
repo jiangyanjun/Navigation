@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "~/Views/Shared/_BaseLayoutPage.cshtml";
+}
+<style>
+    html {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+</style>
+<iframe id="iframe_nav" name="engine" src="/IframePage/Magnet" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" style="background-color:#fff" scrolling="auto">
+</iframe>
+<script type="text/javascript">
+    function ifrIe6PageW(){
+        if (get_navigator() == "IE:6.0"){
+            var iframeH = window.parent.document.getElementById("engine").clientHeight;
+            var iframeW = window.parent.document.getElementById("engine").clientWidth;
+            var pageH=document.body.scrollHeight;
+            if (pageH >= iframeH){
+                document.body.style.width=(iframeW - 17)+"px";
+            }
+        }
+    }
+</script>

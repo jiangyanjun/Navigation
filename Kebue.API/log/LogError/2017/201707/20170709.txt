@@ -1,0 +1,125 @@
+
+ 
+记录时间：2017-07-09 22:59:19,127 
+线程ID:[5] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【GetJoinTypeFind】产生异常：
+
+                Action参数：obj={
+  "Status": 1
+}&__EntityParamsList__={"Status":1}
+
+                Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499612358449
+nonce: 633957232
+signature: A974384569A37A44C1716E3F61567BD4
+
+
+                客户端IP：::1,
+
+                HttpMethod:POST
+                    
+ 
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 运算符“==”无法应用于“int”和“Newtonsoft.Json.Linq.JValue”类型的操作数
+   在 CallSite.Target(Closure , CallSite , Int32 , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.<>c__DisplayClass11_0.<GetJoinTypeFind>b__0(U_Url_List n) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 458
+   在 System.Collections.Generic.List`1.FindAll(Predicate`1 match)
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.GetJoinTypeFind(JObject obj) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 458
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-09 23:02:49,055 
+线程ID:[9] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【GetJoinTypeFind】产生异常：
+
+                Action参数：obj={
+  "Status": 1
+}&__EntityParamsList__={"Status":1}
+
+                Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499612472234
+nonce: 969248439
+signature: 4776EAE284F2C45817922586630B47B4
+
+
+                客户端IP：::1,
+
+                HttpMethod:POST
+                    
+ 
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 运算符“==”无法应用于“int”和“Newtonsoft.Json.Linq.JValue”类型的操作数
+   在 CallSite.Target(Closure , CallSite , Int32 , Object )
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.<>c__DisplayClass11_0.<GetJoinTypeFind>b__0(U_Url_List n) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 458
+   在 System.Collections.Generic.List`1.FindAll(Predicate`1 match)
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.GetJoinTypeFind(JObject obj) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 458
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+
+ 
+记录时间：2017-07-09 23:22:03,487 
+线程ID:[22] 
+日志级别：  ERROR 
+错误描述：
+                请求【BackstagesController】的【PerformTask】产生异常：
+
+                Action参数：obj={}
+
+                Http请求头:Accept-Encoding: gzip
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499613723317
+nonce: 719552767
+signature: DBC762A68FAA83E8375C397FE97FB934
+
+
+                客户端IP：::1,
+
+                HttpMethod:POST
+                    
+ 
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 Kebue.API.Areas.Admin.Controllers.BackstagesController.PerformTask(JObject obj) 位置 E:\工作室\sh\Mmmxa.So\navigation\Kebue.API\Areas\Admin\Controllers\BackstagesController.cs:行号 524
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()

@@ -1,0 +1,48 @@
+﻿<div class="footer">
+    <a href="http://www.kebue.com/" target="_blank">科布尔出品</a>
+    <span>&copy; 2013-2017 Chongbuluo</span>
+    <a href="http://www.miibeian.gov.cn/" target="_blank">陕ICP备</a>
+    <a href="/Navigation" target="_blank">老司机导航</a>
+</div>
+<link href="http://7q5dsg.com1.z0.glb.clouddn.com/search/csshake.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/ui-dialog.css" />
+<script src="http://7q5dsg.com1.z0.glb.clouddn.com/search/dialog-min.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/messenger.css" />
+<link rel="stylesheet" type="text/css" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/messenger-theme-ice.css" />
+<script src="http://7q5dsg.com1.z0.glb.clouddn.com/search/messenger.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="~/Content/js/color.js"></script>
+<script src="http://chong.qiniudn.com/js/chinese_convert.js"></script>
+<script>
+	var defaultEncoding = 2; // 预设语言：1-繁体中文 | 2-简体中文
+	var translateDelay = 0;
+	var cookieDomain = "http://www.kebue.com";
+	var msgToTraditionalChinese = "繁体";
+	var msgToSimplifiedChinese = "简体";
+	var translateButtonId = "translateLink";
+	translateInitilization();
+</script>
+<script type="text/javascript">
+            window.onload=function () {
+                      function _GetUrlParams() {
+                var url = location.search; //获取url中"?"符后的字串
+                var theRequest = {};
+                if (url.indexOf("?") != -1) {
+                    var str = url.substr(1);
+                    strs = str.split("&");
+                    for (var i = 0; i < strs.length; i++) {
+                        //console.log(strs[i]);
+                        theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                    }
+                }
+                return theRequest;
+            }
+            var obj = _GetUrlParams();
+            if(obj.q){
+              var bingurl=obj.q;
+			  document.getElementById('engine').src = 'http://cn.bing.com/search?q=' + escape(bingurl);
+			   $("#cnbing").addClass("on");
+			   $("#google").removeClass("on");
+			  //console.log(bingurl);
+				}
+            }
+</script>

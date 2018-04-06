@@ -1,0 +1,281 @@
+﻿
+@{
+    Layout = null; //"~/Views/Shared/_Base.cshtml";
+    ViewBag.Keyword = "科布尔 是科技社区";
+    ViewBag.Description = "科布尔 让人人都成为老司机";
+}
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="stylesheet" type="text/css" href="http://www.kebue.com//images/kebue.ico" />
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico">
+    <title>科布尔管理系统</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="~/Content/Admin/assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Admin/assets/css/bui-min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Admin/assets/css/main-min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="header">
+        <div class="dl-title">
+            <a href="http://kebue.com/" title="科布尔首页" target="_blank">
+                <img src="~/Image/ico/kebue.png" height="20" />
+            </a>
+        </div>
+        <div class="dl-log">
+            欢迎您，<span class="dl-log-user"></span><a href="###" title="退出系统" class="dl-log-quit"> 
+                @{
+                    if (ViewBag.UserName != null && ViewBag.UserName.UserAccount != null)
+                    {
+                        <i onclick="btnOutLogin()" style="font-size:16px;font-weight:900;font-style:normal;color:blue">@ViewBag.UserName.UserAccount</i>
+                        @*<a onclick="btnOutLogin()"><i class="glyphicon glyphicon-user">@ViewBag.UserName.UserAccount</i></a>*@
+                    }
+                }
+            </a><a href="http://http://www.builive.com/" title="文档库" class="dl-log-quit">文档库</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="dl-main-nav">
+            <div class="dl-inform"><div class="dl-inform-title">贴心小秘书<s class="dl-inform-icon dl-up"></s></div></div>
+            <ul id="J_Nav" class="nav-list ks-clear">
+                <li class="nav-item dl-selected"><div class="nav-item-inner nav-home">网站导航</div></li>
+                <li class="nav-item"><div class="nav-item-inner nav-supplier">快速导航</div></li>
+                @*<li class="nav-item"><div class="nav-item-inner nav-inventory">首页</div></li>
+                    <li class="nav-item"><div class="nav-item-inner nav-order">表单页</div></li>*@
+            </ul>
+        </div>
+        <ul id="J_NavContent" class="dl-tab-conten"></ul>
+    </div>
+    <script type="text/javascript" src="~/Content/Admin/assets/js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="~/Content/Admin/assets/js/bui.js"></script>
+    <script type="text/javascript" src="~/Content/Admin/assets/js/config.js"></script>
+    <script>
+        BUI.use('common/main', function () {
+            var config = [{
+                id: 'menu',
+                homePage: 'code',
+                menu: [{
+                    text: '首页内容',
+                    items: [
+                      { id: 'code', text: '主页', href: '../Admin/Home', closeable: false }
+                      //,{ id: 'second-menu', text: '右边菜单', href: 'main/second-menu.html' },
+                      //{ id: 'dyna-menu', text: '动态菜单', href: 'main/dyna-menu.html' }
+                    ]
+                }, {
+                    text: '网址导航管理',
+                    items: [
+                        { id: 'main-menu1', text: '网址管理', href: '../Admin/Url' },
+                        { id: 'main-menu1', text: '网址报表', href: '../Admin/Report' },
+                        { id: 'main-menu2', text: '类型管理', href: '../Admin/UrlTypeManager' },
+                        { id: 'main-menu3', text: '留言管理', href: '../Admin/LeaveAMessage' },
+                        { id: 'main-menu4', text: '日志管理', href: '../Admin/Log' },
+                        { id: 'main-menu1', text: '任务', href: '../Admin/Task' },
+                        { id: 'main-menu5', text: '添加网址', href: '../User/AddUrl' }
+                    ]
+                } //,{
+                //    text: '文件结构',
+                //    items: [
+                //      { id: 'resource', text: '资源文件结构', href: 'main/resource.html' },
+                //      { id: 'loader', text: '引入JS方式', href: 'main/loader.html' }
+                //    ]
+                //}
+                ]
+            }, {
+                id: 'detail',
+                menu: [{
+                    text: '快速导航',
+                    items: [
+                      { id: 'kebue.com', text: '主页', href: 'http://kebue.com/' },
+                      { id: 'chat', text: '机器人', href: 'http://kebue.com/chat/Index' },
+                      { id: 'Piano', text: 'WEB钢琴', href: 'http://tx.kebue.com/Home/Piano' }
+                    ]
+                }]
+            }, {
+                id: 'form',
+                menu: [{
+                    text: '表单页面',
+                    items: [
+                      { id: 'code', text: '表单代码', href: 'form/code.html' },
+                      { id: 'example', text: '表单示例', href: 'form/example.html' },
+                      { id: 'introduce', text: '表单简介', href: 'form/introduce.html' },
+                      { id: 'valid', text: '表单基本验证', href: 'form/basicValid.html' },
+                      { id: 'advalid', text: '表单复杂验证', href: 'form/advalid.html' },
+                      { id: 'remote', text: '远程调用', href: 'form/remote.html' },
+                      { id: 'group', text: '表单分组', href: 'form/group.html' },
+                      { id: 'depends', text: '表单联动', href: 'form/depends.html' }
+                    ]
+                }, {
+                    text: '成功失败页面',
+                    items: [
+                      { id: 'success', text: '成功页面', href: 'form/success.html' },
+                      { id: 'fail', text: '失败页面', href: 'form/fail.html' }
+
+                    ]
+                }, {
+                    text: '可编辑表格',
+                    items: [
+                      { id: 'grid', text: '可编辑表格', href: 'form/grid.html' },
+                      { id: 'form-grid', text: '表单中的可编辑表格', href: 'form/form-grid.html' },
+                      { id: 'dialog-grid', text: '使用弹出框', href: 'form/dialog-grid.html' },
+                      { id: 'form-dialog-grid', text: '表单中使用弹出框', href: 'form/form-dialog-grid.html' }
+                    ]
+                }]
+            }, {
+                id: 'search',
+                menu: [{
+                    text: '报表',
+                    items: [
+                      { id: 'tab', text: '主页', href: '../Admin/Home' }
+                    ]
+                }, {
+                    text: '网址导航管理',
+                    items: [
+                        { id: 'main-menu1', text: '网址管理', href: '../Admin/UrlEdit' },
+                        { id: 'main-menu2', text: '类型管理', href: '../Admin/UrlTypeManager' },
+                        { id: 'main-menu3', text: '留言管理', href: '../Admin/LeaveAMessage' },
+                        { id: 'main-menu4', text: '日志管理', href: '../Admin/Log' },
+                        { id: 'main-menu5', text: '添加网址', href: '../User/AddUrl' }
+                    ]
+                }]
+            }];
+            new PageUtil.MainPage({
+                modulesConfig: config
+            });
+        });
+        function btnOutLogin() {
+            layer.confirm('确定要退出吗？', {
+                btn: ['是', '我点错了'], //按钮
+                shade: false //不显示遮罩
+            }, function () {
+                $.post("../User/OutLogin", function (result) {
+                    parent.layer.msg(result, { icon: 1 });
+                    window.location.href = "../User/AdminLogin";
+                });
+            });
+        }
+    </script>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<style type="text/css">
+        .pm0 {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #kebue_admin_tab div {
+            height: 100% !important;
+        }
+
+        #kebue_nav_Navigation_rrows_1 {
+            background-color: #808080;
+            background-image: url('../../Image/ico/Navigation_rrows.png');
+            height: 100%;
+        }
+
+        #kebue_nav_Navigation_rrows_2 {
+            z-index: 9999;
+        }
+        #kebue_menu_left nav ul {
+        padding-left:30px;
+        text-align:left;
+        }
+    </style>
+    <script>
+
+        if (self != top) { top.location = self.location; }
+        $(document).ready(function () {
+            $("#kebue_nav_Navigation_rrows_1").css('height', document.body.clientHeight);
+            $(".Navigation_rrows").click(function () {
+                var display = $('#kebue_menu_left').css('display');
+                if (display == 'none') {
+                    $("#kebue_menu_left").css('display', 'block');
+                    $("#kebue_menu_right").removeClass("col-md-12");
+                    $("#kebue_menu_right").addClass("col-md-10");
+                    $("#kebue_nav_Navigation_rrows_2").removeClass("glyphicon glyphicon-triangle-right");
+                    $("#kebue_nav_Navigation_rrows_2").addClass("glyphicon glyphicon-triangle-left");
+                } else {
+                    $("#kebue_nav_Navigation_rrows_2").removeClass("glyphicon glyphicon-triangle-left");
+                    $("#kebue_nav_Navigation_rrows_2").addClass("glyphicon glyphicon-triangle-right");
+                    $("#kebue_menu_left").css('display', 'none');
+                    $("#kebue_menu_right").addClass("col-md-12");
+                    $("#kebue_menu_right").removeClass("col-md-10");
+                }
+            });
+        });
+    </script>
+    <div class="row" style="height:10px" id="kebue_nav_top">
+        <div class="Navigation_rrows glyphicon glyphicon-triangle-left" id="kebue_nav_Navigation_rrows_2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 pm0" id="kebue_menu_left"  style="overflow:auto">
+            <div class="row">
+                <div class="col-md-11 pm0">@RenderPage("~/Views/PartialPage/Admin/Layout/_LeftNavbarPartialPage.cshtml")</div>
+                <div class="col-md-1 pm0 Navigation_rrows" id="kebue_nav_Navigation_rrows_1"></div>
+            </div>
+        </div>
+        <div class="col-md-10 pm0" id="kebue_menu_right">
+            <div id="kebue_admin_tab"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var kebue_bui_Tab = BUI.Tab
+        var kebue_admin_tab = new kebue_bui_Tab.NavTab({
+            render: '#kebue_admin_tab',
+            height: 300,
+            forceFit: true,
+            children: [
+            {
+                title: '主页',
+                href: '../Admin/Home',
+                actived: true
+            }]
+        });
+        kebue_admin_tab.render();
+        function AddTab(title, href) {
+            var config = {
+                title: title,
+                href: href
+            };
+            kebue_admin_tab.addTab(config);
+        }
+        var bodyHeight = window.innerHeight || document.body.clientHeight || document.documentElement.clientHeight;
+        $(".tab-content-container").css("cssText", "height:" + bodyHeight + "px !important;");
+    </script>*@

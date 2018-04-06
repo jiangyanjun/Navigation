@@ -1,0 +1,5 @@
+E:\工作室\sh\Mmmxa.So\navigation\Mmmxa.Entity.Core\bin\Debug\Mmmxa.Entity.Core.dll
+E:\工作室\sh\Mmmxa.So\navigation\Mmmxa.Entity.Core\bin\Debug\Mmmxa.Entity.Core.pdb
+E:\工作室\sh\Mmmxa.So\navigation\Mmmxa.Entity.Core\obj\Debug\Mmmxa.Entity.Core.csprojResolveAssemblyReference.cache
+E:\工作室\sh\Mmmxa.So\navigation\Mmmxa.Entity.Core\obj\Debug\Mmmxa.Entity.Core.dll
+E:\工作室\sh\Mmmxa.So\navigation\Mmmxa.Entity.Core\obj\Debug\Mmmxa.Entity.Core.pdb

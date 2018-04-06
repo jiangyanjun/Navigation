@@ -1,0 +1,468 @@
+﻿ <!--左侧导航开始-->
+<nav class="list">
+    <ul class="yiji" id="side-menu">
+        <li>
+            <a class="clear no-padding-h ng-scope" data-template="user" data-animation="am-collapse" bs-dropdown="dropdown" href="http://kebue.com/">
+                @{
+                    if (ViewBag.UserName != null && ViewBag.UserName.UserAccount != null)
+                    {
+                        <i class="glyphicon glyphicon-user">@ViewBag.UserName.UserAccount</i>
+                    }
+                }
+        </a>
+    </li>
+    <li>
+        <a title="主页" onclick="AddTab('主页', '../Admin/Home')"><i class="fa fa-home"></i>&nbsp;主页</a>
+    </li>
+    <li class="border">
+        <a href="#" class="kebue_menu_one_layer"><i class="glyphicon glyphicon-th"></i>&nbsp;网址导航</a>
+        <ul class="display_none li_border">
+            <li>
+                <a href="#" class="inactive active"><i class="glyphicon glyphicon-th-list"></i>&nbsp;基础管理</a>
+                <ul>
+                    <li>
+                        <a onclick="AddTab('网址管理','../Admin/UrlEdit')">网址管理</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('类型管理', '../Admin/UrlTypeManager')">类型管理</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('添加网址', '../Admin/LeaveAMessage')">留言管理</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('添加网址', '../Admin/Log')">日志管理</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('添加网址', '../User/AddUrl')">添加网址</a>
+                    </li>
+                    <li class="line dk"></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li class="border">
+        <a class="kebue_menu_one_layer">信箱<span class="label label-warning pull-right">16</span></a>
+        <ul class="display_none li_border">
+            <li>
+                <a onclick="AddTab('收件箱','/hAdmin/Admin/mailbox.html')">收件箱</a>
+            </li>
+            <li>
+                <a onclick="AddTab('查看邮件','/hAdmin/Admin/mail_detail.html')">查看邮件</a>
+            </li>
+            <li>
+                <a onclick="AddTab('写信','/hAdmin/Admin/mail_compose.html')">写信</a>
+            </li>
+
+            <li>
+                <a onclick="AddTab('百度ECharts', '/hAdmin/Admin/graph_echarts.html')">百度ECharts</a>
+            </li>
+            <li>
+                <a onclick="AddTab('Flot', '/hAdmin/Admin/graph_flot.html')">Flot</a>
+            </li>
+            <li>
+                <a onclick="AddTab('Morris.js', '/hAdmin/Admin/graph_morris.html')">Morris.js</a>
+            </li>
+            <li>
+                <a onclick="AddTab('Rickshaw', '/hAdmin/Admin/graph_rickshaw.html')">Rickshaw</a>
+            </li>
+            <li>
+                <a onclick="AddTab('Peity', '/hAdmin/Admin/graph_peity.html')">Peity</a>
+            </li>
+            <li>
+                <a onclick="AddTab('Sparkline', '/hAdmin/Admin/graph_sparkline.html')">Sparkline</a>
+            </li>
+            <li>
+                <a onclick="AddTab('图表组合', '/hAdmin/Admin/graph_metrics.html')">图表组合</a>
+            </li>
+        </ul>
+    </li>
+    <li class="border">
+        <a href="#" class="kebue_menu_one_layer"><i class="fa fa-edit"></i> <span class="nav-label">表单</span><span class="fa arrow"></span></a>
+        <ul class="display_none li_border">
+            <li>
+                <a onclick="AddTab('基本表单','/hAdmin/Admin/form_basic.html')">基本表单</a>
+            </li>
+            <li>
+                <a onclick="AddTab('表单验证','/hAdmin/Admin/form_validate.html')">表单验证</a>
+            </li>
+            <li>
+                <a onclick="AddTab('高级插件','/hAdmin/Admin/form_advanced.html')">高级插件</a>
+            </li>
+            <li>
+                <a onclick="AddTab('表单向导','/hAdmin/Admin/form_wizard.html')"/hAdmin/Admin/form_wizard.html">表单向导</a>
+            </li>
+            <li>
+                <a href="#">文件上传 <span class="fa arrow"></span></a>
+                <ul>
+                    <li>
+                        <a onclick="AddTab('百度WebUploader','/hAdmin/Admin/form_webuploader.html')">百度WebUploader</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('DropzoneJS','/hAdmin/Admin/form_file_upload.html')">DropzoneJS</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">编辑器 <span class="fa arrow"></span></a>
+                <ul>
+                    <li>
+                        <a onclick="AddTab('富文本编辑器','/hAdmin/Admin/form_editors.html')">富文本编辑器</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('simditor','/hAdmin/Admin/form_simditor.html')">simditor</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('MarkDown编辑器','/hAdmin/Admin/form_markdown.html')">MarkDown编辑器</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('代码编辑器','/hAdmin/Admin/code_editor.html')">代码编辑器</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a onclick="AddTab('日期选择器layerDate','/hAdmin/Admin/layerdate.html')">日期选择器layerDate</a>
+            </li>
+        </ul>
+    </li>
+    <li class="border">
+        <a href="#" class="kebue_menu_one_layer"><i class="fa fa-desktop"></i> <span class="nav-label">页面</span><span class="fa arrow"></span></a>
+        <ul class="display_none li_border">
+            <li>
+                <a onclick="AddTab('联系人','/hAdmin/Admin/contacts.html')">联系人</a>
+            </li>
+            <li>
+                <a onclick="AddTab('个人资料','/hAdmin/Admin/profile.html')">个人资料</a>
+            </li>
+            <li>
+                <a href="#">项目管理 <span class="fa arrow"></span></a>
+                <ul>
+                    <li>
+                        <a onclick="AddTab('项目','/hAdmin/Admin/projects.html')">项目</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('项目详情','/hAdmin/Admin/project_detail.html')">项目详情</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a onclick="AddTab('团队管理','/hAdmin/Admin/teams_board.html')">团队管理</a>
+            </li>
+            <li>
+                <a onclick="AddTab('信息流','/hAdmin/Admin/social_feed.html')">信息流</a>
+            </li>
+            <li>
+                <a onclick="AddTab('客户管理','/hAdmin/Admin/clients.html')">客户管理</a>
+            </li>
+            <li>
+                <a onclick="AddTab('文件管理器','/hAdmin/Admin/file_manager.html')">文件管理器</a>
+            </li>
+            <li>
+                <a onclick="AddTab('日历','/hAdmin/Admin/calendar.html')">日历</a>
+            </li>
+            <li>
+                <a href="#">博客 <span class="fa arrow"></span></a>
+                <ul>
+                    <li>
+                        <a onclick="AddTab('文章列表','/hAdmin/Admin/blog.html')">文章列表</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('文章详情','/hAdmin/Admin/article.html')">文章详情</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a onclick="AddTab('FAQ','/hAdmin/Admin/faq.html')">FAQ</a>
+            </li>
+            <li>
+                <a href="#">时间轴 <span class="fa arrow"></span></a>
+                <ul>
+                    <li>
+                        <a onclick="AddTab('时间轴','/hAdmin/Admin/timeline.html')">时间轴</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('时间轴v2','/hAdmin/Admin/timeline_v2.html')">时间轴v2</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a onclick="AddTab('标签墙','/hAdmin/Admin/pin_board.html')">标签墙</a>
+            </li>
+            <li>
+                <a href="#">单据 <span class="fa arrow"></span></a>
+                <ul>
+                    <li>
+                        <a onclick="AddTab('单据','/hAdmin/Admin/invoice.html')">单据</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('单据打印','/hAdmin/Admin/invoice_print.html')">单据打印</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a onclick="AddTab('搜索结果','/hAdmin/Admin/search_results.html')">搜索结果</a>
+            </li>
+            <li>
+                <a onclick="AddTab('网址管理','')"/hAdmin/Admin/forum_main.html">论坛</a>
+            </li>
+            <li>
+                <a href="#">即时通讯 <span class="fa arrow"></span></a>
+                <ul>
+                    <li>
+                        <a onclick="AddTab('聊天窗口','/hAdmin/Admin/chat_view.html')">聊天窗口</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">登录注册相关 <span class="fa arrow"></span></a>
+                <ul>
+                    <li>
+                        <a href="login.html" target="_blank">登录页面</a>
+                    </li>
+                    <li>
+                        <a href="login_v2.html" target="_blank">登录页面v2</a>
+                    </li>
+                    <li>
+                        <a href="register.html" target="_blank">注册页面</a>
+                    </li>
+                    <li>
+                        <a href="lockscreen.html" target="_blank">登录超时</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a onclick="AddTab('404页面','/hAdmin/Admin/404.html')">404页面</a>
+            </li>
+            <li>
+                <a onclick="AddTab('500页面','/hAdmin/Admin/500.html')">500页面</a>
+            </li>
+            <li>
+                <a onclick="AddTab('空白页','/hAdmin/Admin/empty_page.html')">空白页</a>
+            </li>
+        </ul>
+    </li>
+    <li class="border">
+        <a href="#" class="kebue_menu_one_layer"><i class="fa fa-flask"></i> <span class="nav-label">UI元素</span><span class="fa arrow"></span></a>
+        <ul class="display_none li_border">
+            <li>
+                <a onclick="AddTab('网址管理','')"/hAdmin/Admin/typography.html">排版</a>
+            </li>
+            <li>
+                <a href="#">字体图标 <span class="fa arrow"></span></a>
+                <ul>
+                    <li>
+                        <a onclick="AddTab('Font Awesome','/hAdmin/Admin/fontawesome.html')">Font Awesome</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('Glyphicon','/hAdmin/Admin/glyphicons.html')">Glyphicon</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('阿里巴巴矢量图标库','/hAdmin/Admin/iconfont.html')">阿里巴巴矢量图标库</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">拖动排序 <span class="fa arrow"></span></a>
+                <ul>
+                    <li>
+                        <a onclick="AddTab('拖动面板','/hAdmin/Admin/draggable_panels.html')">拖动面板</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('任务清单','/hAdmin/Admin/agile_board.html')">任务清单</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a onclick="AddTab('按钮','/hAdmin/Admin/buttons.html')">按钮</a>
+            </li>
+            <li>
+                <a onclick="AddTab('选项卡面板','/hAdmin/Admin/tabs_panels.html')">选项卡 &amp; 面板</a>
+            </li>
+            <li>
+                <a onclick="AddTab('通知 提示','/hAdmin/Admin/notifications.html')">通知 &amp; 提示</a>
+            </li>
+            <li>
+                <a onclick="AddTab('徽章，标签，进度条','/hAdmin/Admin/badges_labels.html')">徽章，标签，进度条</a>
+            </li>
+            <li>
+                <a onclick="AddTab('栅格','/hAdmin/Admin/grid_options.html')">栅格</a>
+            </li>
+            <li>
+                <a onclick="AddTab('视频、音频','/hAdmin/Admin/plyr.html')">视频、音频</a>
+            </li>
+            <li>
+                <a href="#">弹框插件 <span class="fa arrow"></span></a>
+                <ul>
+                    <li>
+                        <a onclick="AddTab('Web弹层组件layer','/hAdmin/Admin/layer.html')">Web弹层组件layer</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('模态窗口','/hAdmin/Admin/modal_window.html')">模态窗口</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('网址管理','/hAdmin/Admin/sweetalert.html')">SweetAlert</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">树形视图 <span class="fa arrow"></span></a>
+                <ul>
+                    <li>
+                        <a onclick="AddTab('jsTree','/hAdmin/Admin/jstree.html')">jsTree</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('Bootstrap Tree View','/hAdmin/Admin/tree_view.html')">Bootstrap Tree View</a>
+                    </li>
+                    <li>
+                        <a onclick="AddTab('nestable','/hAdmin/Admin/nestable_list.html')">nestable</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a onclick="AddTab('Toastr通知','/hAdmin/Admin/toastr_notifications.html')">Toastr通知</a>
+            </li>
+            <li>
+                <a onclick="AddTab('文本对比','/hAdmin/Admin/diff.html')">文本对比</a>
+            </li>
+            <li>
+                <a onclick="AddTab('加载动画','/hAdmin/Admin/spinners.html')">加载动画</a>
+            </li>
+            <li>
+                <a onclick="AddTab('小部件','/hAdmin/Admin/widgets.html')">小部件</a>
+            </li>
+        </ul>
+    </li>
+    <li class="border">
+        <a href="#" class="kebue_menu_one_layer"><i class="fa fa-table"></i> <span class="nav-label">表格</span><span class="fa arrow"></span></a>
+        <ul class="display_none li_border">
+            <li>
+                <a onclick="AddTab('基本表格','/hAdmin/Admin/table_basic.html')">基本表格</a>
+            </li>
+            <li>
+                <a onclick="AddTab('DataTables','/hAdmin/Admin/table_data_tables.html')">DataTables</a>
+            </li>
+            <li>
+                <a onclick="AddTab('jqGrid',/hAdmin/Admin/table_jqgrid.html'')">jqGrid</a>
+            </li>
+            <li>
+                <a onclick="AddTab('Foo Tables','/hAdmin/Admin/table_foo_table.html')">Foo Tables</a>
+            </li>
+            <li>
+                <a onclick="AddTab('推荐','/hAdmin/Admin/table_bootstrap.html')">
+                    Bootstrap Table
+                    <span class="label label-danger pull-right">推荐</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="border">
+        <a href="#" class="kebue_menu_one_layer"><i class="fa fa-picture-o"></i> <span class="nav-label">相册</span><span class="fa arrow"></span></a>
+        <ul class="display_none li_border">
+            <li>
+                <a onclick="AddTab('基本图库','/hAdmin/Admin/basic_gallery.html')">基本图库</a>
+            </li>
+            <li>
+                <a onclick="AddTab('图片切换','/hAdmin/Admin/carousel.html')">图片切换</a>
+            </li>
+            <li>
+                <a onclick="AddTab('Blueimp相册','/hAdmin/Admin/blueimp.html')">Blueimp相册</a>
+            </li>
+        </ul>
+    </li>
+    <li class="border">
+        <a class="kebue_menu_one_layer" onclick="AddTab('CSS动画','/hAdmin/Admin/css_animation.html')"><i class="fa fa-magic"></i> <span class="nav-label">CSS动画</span></a>
+    </li>
+    <li class="border">
+        <a href="#" class="kebue_menu_one_layer"><i class="fa fa-cutlery"></i> <span class="nav-label">工具 </span><span class="fa arrow"></span></a>
+        <ul class="display_none li_border">
+            <li>
+                <a onclick="AddTab('表单构建器','/hAdmin/Admin/form_builder.html')">表单构建器</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+</nav>
+<li class="line dk"></li>
+<style type="text/css">
+    .kebue_menu_one_layer {
+        background-color: #5CC0DE;
+        color: #ffffff;
+    }
+
+    .border {
+        border: 1px solid #000000;
+    }
+
+    a:hover {
+        background-color:white;
+        color: #ff6a00;
+        border-radius: 5px;
+    }
+
+    .display_none {
+        display: none;
+    }
+
+    a:link, a:visited {
+        text-decoration: none;
+    }
+
+    .list {
+        width: 210px;
+        border-bottom: solid 1px #316a91;
+        margin: 0 auto 0 auto;
+    }
+
+    ul, li {
+        list-style: none;
+    }
+
+    .li_border li {
+        border-left: dashed 1px #316a91;
+    }
+
+    .list ul li a {
+        padding-left: 10px;
+        font-size: 12px;
+        display: block;
+        font-weight: bold;
+        height: 36px;
+        line-height: 36px;
+        position: relative;
+    }
+
+    .list ul li ul {
+        display: none;
+    }
+
+        .list ul li ul li ul {
+            display: none;
+        }
+</style>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.inactive').click(function(){
+            if($(this).siblings('ul').css('display')=='none'){
+                $(this).parent('li').siblings('li').removeClass('inactives');
+                $(this).addClass('inactives');
+                $(this).siblings('ul').slideDown(100).children('li');
+                if($(this).parents('li').siblings('li').children('ul').css('display')=='block'){
+                    $(this).parents('li').siblings('li').children('ul').parent('li').children('a').removeClass('inactives');
+                    $(this).parents('li').siblings('li').children('ul').slideUp(100);
+
+                }
+            }else{
+                //控制自身变成+号
+                $(this).removeClass('inactives');
+                //控制自身菜单下子菜单隐藏
+                $(this).siblings('ul').slideUp(100);
+                //控制自身子菜单变成+号
+                $(this).siblings('ul').children('li').children('ul').parent('li').children('a').addClass('inactives');
+                //控制自身菜单下子菜单隐藏
+                $(this).siblings('ul').children('li').children('ul').slideUp(100);
+
+                //控制同级菜单只保持一个是展开的（-号显示）
+                $(this).siblings('ul').children('li').children('a').removeClass('inactives');
+            }
+        })
+    });
+</script>

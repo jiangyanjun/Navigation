@@ -1,0 +1,3771 @@
+
+ 
+记录时间：2017-07-04 19:59:11,695 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 07:59:11
+            结束时间：17-7-4 下午 07:59:11
+            总 时 间：0.0582916秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499169544697
+nonce: 1839721881
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 19:59:12,747 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScript
+            开始时间：17-7-4 下午 07:59:11
+            结束时间：17-7-4 下午 07:59:12
+            总 时 间：0.8587109秒
+            Action参数：__EntityParamsList__=null
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499169544691
+nonce: 1550773908
+signature: 576C8DCB5601614044BFB1E166D9A0F2
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:17,175 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:17
+            结束时间：17-7-4 下午 11:00:17
+            总 时 间：0.0610409秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180416884
+nonce: 59690809
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:17,701 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScript
+            开始时间：17-7-4 下午 11:00:17
+            结束时间：17-7-4 下午 11:00:17
+            总 时 间：0.3682792秒
+            Action参数：__EntityParamsList__=null
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180416879
+nonce: 2014542474
+signature: 75C500F2787DABF234BCA99DB421DC59
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:24,619 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:24
+            结束时间：17-7-4 下午 11:00:24
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180424604
+nonce: 1607837598
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:25,126 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:24
+            结束时间：17-7-4 下午 11:00:25
+            总 时 间：0.4172754秒
+            Action参数：obj={
+  "Parameter": 0
+}&__EntityParamsList__={"Parameter":0}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180424603
+nonce: 485937779
+signature: 441ED635EBEE8E890120CA801A866D5C
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:25,354 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:25
+            结束时间：17-7-4 下午 11:00:25
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180425252
+nonce: 1836092358
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:25,860 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:25
+            结束时间：17-7-4 下午 11:00:25
+            总 时 间：0.0960638秒
+            Action参数：obj={
+  "Parameter": 1
+}&__EntityParamsList__={"Parameter":1}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180425252
+nonce: 1836092358
+signature: FE73B4DC994AFFB1EF1753142CA1EA61
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:25,964 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:25
+            结束时间：17-7-4 下午 11:00:25
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180425939
+nonce: 609054910
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,054 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:25
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0.0550369秒
+            Action参数：obj={
+  "Parameter": 2
+}&__EntityParamsList__={"Parameter":2}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180425938
+nonce: 1634638738
+signature: A91C49CEA7DCF09F6CD708CFDF125A6D
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,121 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426115
+nonce: 607156092
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,164 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0.0330215秒
+            Action参数：obj={
+  "Parameter": 3
+}&__EntityParamsList__={"Parameter":3}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426115
+nonce: 607156092
+signature: CEC2E9755D9BC75677A9C89FC9ABC660
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,192 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426184
+nonce: 708832311
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,241 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0.0320209秒
+            Action参数：obj={
+  "Parameter": 4
+}&__EntityParamsList__={"Parameter":4}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426184
+nonce: 708832311
+signature: CBED4F860661B0075782BE5CAD1D122C
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,276 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426266
+nonce: 362820648
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,351 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0.0380248秒
+            Action参数：obj={
+  "Parameter": 5
+}&__EntityParamsList__={"Parameter":5}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426266
+nonce: 362820648
+signature: 693B44C37CC00795DB701D8DB9E70ECD
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,398 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426391
+nonce: 1013860968
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,458 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0.0370257秒
+            Action参数：obj={
+  "Parameter": 6
+}&__EntityParamsList__={"Parameter":6}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426391
+nonce: 1013860968
+signature: 84E3889F79A70ECFA8CB855660A2323E
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,483 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426476
+nonce: 1886065115
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,532 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0.0400266秒
+            Action参数：obj={
+  "Parameter": 7
+}&__EntityParamsList__={"Parameter":7}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426476
+nonce: 1886065115
+signature: 051B8877BFABB3C925B13C900B2B1483
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,569 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0.0010011秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426561
+nonce: 610785615
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,614 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0.0330204秒
+            Action参数：obj={
+  "Parameter": 8
+}&__EntityParamsList__={"Parameter":8}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426561
+nonce: 610785615
+signature: EBCAC524D598AD5ADAE3B9B27A0D0554
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,639 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426633
+nonce: 1930677644
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,674 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0.0250166秒
+            Action参数：obj={
+  "Parameter": 9
+}&__EntityParamsList__={"Parameter":9}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426633
+nonce: 1930677644
+signature: 7F1E187DB7808B435335616A14DB98D2
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,706 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426699
+nonce: 814138053
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,768 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0.0510331秒
+            Action参数：obj={
+  "Parameter": 10
+}&__EntityParamsList__={"Parameter":10}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426699
+nonce: 814138053
+signature: 229CC584A1B4E64F713D510F0E2D4D41
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,843 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0.0030016秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426819
+nonce: 150646572
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,904 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0.0430286秒
+            Action参数：obj={
+  "Parameter": 11
+}&__EntityParamsList__={"Parameter":11}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426819
+nonce: 150646572
+signature: 74A2D6D68E8346B7359F9F5B16869275
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:26,985 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:26
+            结束时间：17-7-4 下午 11:00:26
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426943
+nonce: 801686892
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,047 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0.0380241秒
+            Action参数：obj={
+  "Parameter": 12
+}&__EntityParamsList__={"Parameter":12}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180426943
+nonce: 801686892
+signature: F304A50624CD6C40E78B3D6738B41ADF
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,092 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0.0010018秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427084
+nonce: 1309899874
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,139 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0.0330219秒
+            Action参数：obj={
+  "Parameter": 13
+}&__EntityParamsList__={"Parameter":13}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427084
+nonce: 1309899874
+signature: 61D836A1AEFF303EE20AF9BA0F9EB720
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,196 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0.0050037秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427171
+nonce: 130936365
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,277 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0.0330215秒
+            Action参数：obj={
+  "Parameter": 14
+}&__EntityParamsList__={"Parameter":14}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427170
+nonce: 1156520193
+signature: 54997F342254E81C87C94D0D315D8E20
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,315 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427305
+nonce: 141656821
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,349 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0.0250166秒
+            Action参数：obj={
+  "Parameter": 15
+}&__EntityParamsList__={"Parameter":15}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427305
+nonce: 141656821
+signature: 6E78D508A3E7F8C5ACFEEE0FAE320693
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,371 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427364
+nonce: 1909236732
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,403 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0.0240164秒
+            Action参数：obj={
+  "Parameter": 16
+}&__EntityParamsList__={"Parameter":16}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427364
+nonce: 1909236732
+signature: 45A019B26A7608CF22504C79597406EA
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,427 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427417
+nonce: 1240385023
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,463 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0.0260169秒
+            Action参数：obj={
+  "Parameter": 17
+}&__EntityParamsList__={"Parameter":17}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427417
+nonce: 1240385023
+signature: D13A9C5118FA0D36A86EFBA02BB87C34
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,484 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427478
+nonce: 956797278
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,567 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0.0290208秒
+            Action参数：obj={
+  "Parameter": 18
+}&__EntityParamsList__={"Parameter":18}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427478
+nonce: 956797278
+signature: 53FA5BF12543EEF8921F4373D15CFD98
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,588 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427581
+nonce: 548361697
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,626 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0.0300199秒
+            Action参数：obj={
+  "Parameter": 19
+}&__EntityParamsList__={"Parameter":19}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427581
+nonce: 548361697
+signature: 744E17D8A625AB32513515B2889D72A4
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,658 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427654
+nonce: 1868253726
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,687 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0.0210139秒
+            Action参数：obj={
+  "Parameter": 20
+}&__EntityParamsList__={"Parameter":20}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427654
+nonce: 1868253726
+signature: 46AFC73DAB3C1AEC859BF554CDDE1A1D
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,706 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427702
+nonce: 2032353863
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,737 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0.0210136秒
+            Action参数：obj={
+  "Parameter": 21
+}&__EntityParamsList__={"Parameter":21}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427702
+nonce: 2032353863
+signature: E0E916439896D2B373C00CEF7896C2E0
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,757 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427752
+nonce: 145286344
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,792 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0.025015秒
+            Action参数：obj={
+  "Parameter": 22
+}&__EntityParamsList__={"Parameter":22}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427752
+nonce: 145286344
+signature: A68112C36FF0D877A1A95C9C3B80E4C8
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,814 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427808
+nonce: 694650445
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,863 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0.0360224秒
+            Action参数：obj={
+  "Parameter": 23
+}&__EntityParamsList__={"Parameter":23}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427808
+nonce: 694650445
+signature: 372A40440F68F537F9E98C96D3DB5EC3
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,913 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427902
+nonce: 926534728
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,957 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0.0310198秒
+            Action参数：obj={
+  "Parameter": 24
+}&__EntityParamsList__={"Parameter":24}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427902
+nonce: 926534728
+signature: F4C9518FCAEA09331E14A5B28A655967
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:27,998 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:27
+            结束时间：17-7-4 下午 11:00:27
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427992
+nonce: 965787029
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,038 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0310206秒
+            Action参数：obj={
+  "Parameter": 25
+}&__EntityParamsList__={"Parameter":25}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180427992
+nonce: 965787029
+signature: D701D789E53CE3DDE3D0BC90C5035A7B
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,062 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428056
+nonce: 987059828
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,111 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0310206秒
+            Action参数：obj={
+  "Parameter": 26
+}&__EntityParamsList__={"Parameter":26}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428056
+nonce: 987059828
+signature: B58543BB1E449C20F20F695367FBEF24
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,135 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428129
+nonce: 1281368029
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,174 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0290193秒
+            Action参数：obj={
+  "Parameter": 27
+}&__EntityParamsList__={"Parameter":27}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428129
+nonce: 1281368029
+signature: 262EDADA403B9B9A7F84A02E3D35D401
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,206 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428201
+nonce: 453776411
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,251 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0260168秒
+            Action参数：obj={
+  "Parameter": 28
+}&__EntityParamsList__={"Parameter":28}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428201
+nonce: 453776411
+signature: EB150A067031657E933E96B300221B92
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,278 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428272
+nonce: 651768621
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,321 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0190122秒
+            Action参数：obj={
+  "Parameter": 29
+}&__EntityParamsList__={"Parameter":29}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428272
+nonce: 651768621
+signature: 90386FA43C5C75323C40C95DA01D1C74
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,341 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428337
+nonce: 560812858
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,369 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0200133秒
+            Action参数：obj={
+  "Parameter": 30
+}&__EntityParamsList__={"Parameter":30}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428337
+nonce: 560812858
+signature: CA34507E953B92A4298CB161D34F2598
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,387 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428381
+nonce: 1654180832
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,415 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0210132秒
+            Action参数：obj={
+  "Parameter": 31
+}&__EntityParamsList__={"Parameter":31}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428381
+nonce: 1654180832
+signature: 7DCB334E6829D1519F50D3B5C3AB9CCC
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,432 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428427
+nonce: 1721964978
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,458 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0180116秒
+            Action参数：obj={
+  "Parameter": 32
+}&__EntityParamsList__={"Parameter":32}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428427
+nonce: 1721964978
+signature: ABD3F673A1F5CF6B85253A716F98A6D0
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,476 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0010038秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428470
+nonce: 571533314
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,504 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0190071秒
+            Action参数：obj={
+  "Parameter": 33
+}&__EntityParamsList__={"Parameter":33}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428470
+nonce: 571533314
+signature: DAE9A1413793C3B7A7D8358751403581
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,526 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428519
+nonce: 1857533270
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,557 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0210108秒
+            Action参数：obj={
+  "Parameter": 34
+}&__EntityParamsList__={"Parameter":34}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428519
+nonce: 1857533270
+signature: DAA90DBD2FE14FC3A4BF9F58C669DD4E
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,576 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0010007秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428570
+nonce: 1092365570
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,607 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.022015秒
+            Action参数：obj={
+  "Parameter": 35
+}&__EntityParamsList__={"Parameter":35}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428570
+nonce: 1092365570
+signature: C4A95AC7D3D98FF9A770DB1201A3B7DB
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,629 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428621
+nonce: 327197870
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,663 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0230145秒
+            Action参数：obj={
+  "Parameter": 36
+}&__EntityParamsList__={"Parameter":36}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428621
+nonce: 327197870
+signature: A0C8FA9FCB78250102AB7D104A5B464A
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,686 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428679
+nonce: 972877962
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,727 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0280194秒
+            Action参数：obj={
+  "Parameter": 37
+}&__EntityParamsList__={"Parameter":37}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428679
+nonce: 972877962
+signature: 39D8EB847097DB6642BA1A75C4B68CCD
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,760 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428748
+nonce: 1074554181
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,805 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0280178秒
+            Action参数：obj={
+  "Parameter": 38
+}&__EntityParamsList__={"Parameter":38}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428748
+nonce: 1074554181
+signature: 6656003877947A646D2FEF09BC6E1CAA
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,858 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428845
+nonce: 377170627
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,901 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0300191秒
+            Action参数：obj={
+  "Parameter": 39
+}&__EntityParamsList__={"Parameter":39}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428845
+nonce: 377170627
+signature: 8FE2ACF42A2A5716A4C207A5DB9F02E4
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,932 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428920
+nonce: 767794819
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,970 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0.0290196秒
+            Action参数：obj={
+  "Parameter": 40
+}&__EntityParamsList__={"Parameter":40}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428920
+nonce: 767794819
+signature: 1190B683DD8A3EC3E9BD40CF8716643E
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:28,999 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:28
+            结束时间：17-7-4 下午 11:00:28
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428987
+nonce: 773155047
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,045 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0290193秒
+            Action参数：obj={
+  "Parameter": 41
+}&__EntityParamsList__={"Parameter":41}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180428987
+nonce: 773155047
+signature: B5485E721BD7A8B1E3FF07F47DAB0C14
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,077 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429070
+nonce: 635687937
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,110 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0250056秒
+            Action参数：obj={
+  "Parameter": 42
+}&__EntityParamsList__={"Parameter":42}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429070
+nonce: 635687937
+signature: 43037AECAA8A7CBA41851ED6A50707B2
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,133 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429126
+nonce: 63152219
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,166 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0240155秒
+            Action参数：obj={
+  "Parameter": 43
+}&__EntityParamsList__={"Parameter":43}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429126
+nonce: 63152219
+signature: E89F32CD090587F5A2662BA7ADE62321
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,193 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429186
+nonce: 805148302
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,222 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0220143秒
+            Action参数：obj={
+  "Parameter": 44
+}&__EntityParamsList__={"Parameter":44}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429186
+nonce: 805148302
+signature: BFBE6D00C9D5B85A44BFA3F5ABB73CAA
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,241 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429236
+nonce: 1065564430
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,281 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0250167秒
+            Action参数：obj={
+  "Parameter": 45
+}&__EntityParamsList__={"Parameter":45}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429236
+nonce: 1065564430
+signature: 3C7B8346C33ACFA3A2A7B4BD3A4A810C
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,307 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429297
+nonce: 781976685
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,346 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0290184秒
+            Action参数：obj={
+  "Parameter": 46
+}&__EntityParamsList__={"Parameter":46}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429297
+nonce: 781976685
+signature: 0FB4D66AE2A92993E2DE229FE5A48265
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,389 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429366
+nonce: 883652904
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,444 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0290184秒
+            Action参数：obj={
+  "Parameter": 47
+}&__EntityParamsList__={"Parameter":47}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429365
+nonce: 1909236732
+signature: 451CC4B81C02EF0482C83BBAD3AC2A85
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,483 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0010006秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429474
+nonce: 1789749124
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,515 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0210131秒
+            Action参数：obj={
+  "Parameter": 48
+}&__EntityParamsList__={"Parameter":48}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429474
+nonce: 1789749124
+signature: 4CDBFD2DCE1662B785E9367E41920FA0
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,533 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429528
+nonce: 95313587
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,560 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0160102秒
+            Action参数：obj={
+  "Parameter": 49
+}&__EntityParamsList__={"Parameter":49}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429528
+nonce: 95313587
+signature: 6887480310DAC1E1C42F869343FFB460
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,576 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429572
+nonce: 66781742
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,611 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0230153秒
+            Action参数：obj={
+  "Parameter": 50
+}&__EntityParamsList__={"Parameter":50}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429572
+nonce: 66781742
+signature: C8FC2E7DC4A2DA3E8BD15FF03282169B
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,647 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429643
+nonce: 264773952
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,680 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0240159秒
+            Action参数：obj={
+  "Parameter": 51
+}&__EntityParamsList__={"Parameter":51}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429642
+nonce: 1290357780
+signature: 20D81AB6B6CDACDBD8CAA859097FA079
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,727 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429722
+nonce: 848030126
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,757 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0220142秒
+            Action参数：obj={
+  "Parameter": 52
+}&__EntityParamsList__={"Parameter":52}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429722
+nonce: 848030126
+signature: 0298C4BF14984CFD220EEB8AEB6C6E3A
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,780 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429776
+nonce: 1301078236
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,807 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0170105秒
+            Action参数：obj={
+  "Parameter": 53
+}&__EntityParamsList__={"Parameter":53}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429776
+nonce: 1301078236
+signature: E847B0A74723635A3F9E40F8F2DF23D8
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,828 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0010054秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429819
+nonce: 150646572
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,850 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0130083秒
+            Action参数：obj={
+  "Parameter": 54
+}&__EntityParamsList__={"Parameter":54}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429819
+nonce: 150646572
+signature: A5450B1A948CDCF4D13F69A807052DDE
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,865 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429860
+nonce: 1051382564
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,890 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.018012秒
+            Action参数：obj={
+  "Parameter": 55
+}&__EntityParamsList__={"Parameter":55}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429860
+nonce: 1051382564
+signature: EDE01B652F2042FBB11684CE70B0F722
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,905 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429901
+nonce: 926534728
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,927 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0140081秒
+            Action参数：obj={
+  "Parameter": 56
+}&__EntityParamsList__={"Parameter":56}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429901
+nonce: 926534728
+signature: 559418E9C4F7275BDC3325BD4FABEDEA
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,942 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429938
+nonce: 1634638738
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,964 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0.0140105秒
+            Action参数：obj={
+  "Parameter": 57
+}&__EntityParamsList__={"Parameter":57}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429938
+nonce: 1634638738
+signature: C473F91D1459F8903938C57A3D8A92ED
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:29,985 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:29
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429978
+nonce: 1413474911
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,008 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:29
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.0160111秒
+            Action参数：obj={
+  "Parameter": 58
+}&__EntityParamsList__={"Parameter":58}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180429978
+nonce: 1413474911
+signature: CFD622B490A6254B2D04F3EE0216ACC7
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,037 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430021
+nonce: 1497171628
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,068 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.0230141秒
+            Action参数：obj={
+  "Parameter": 59
+}&__EntityParamsList__={"Parameter":59}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430021
+nonce: 1497171628
+signature: 9DDCF81B1D30E0FE51A31F62239C5DDD
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,091 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430085
+nonce: 284316046
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,114 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.016011秒
+            Action参数：obj={
+  "Parameter": 60
+}&__EntityParamsList__={"Parameter":60}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430085
+nonce: 284316046
+signature: 2547B69DD000ACB3FAFE2CD2012AD6C8
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,131 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430125
+nonce: 63152219
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,160 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.0180119秒
+            Action参数：obj={
+  "Parameter": 61
+}&__EntityParamsList__={"Parameter":61}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430125
+nonce: 63152219
+signature: C847A443BEF7A79AD828EECC0B80504C
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,179 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430174
+nonce: 1349152175
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,211 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.0200133秒
+            Action参数：obj={
+  "Parameter": 62
+}&__EntityParamsList__={"Parameter":62}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430173
+nonce: 227252356
+signature: 936BE6AEBB9BBB87504078A776C293A4
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,233 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430227
+nonce: 680300466
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,265 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.0220146秒
+            Action参数：obj={
+  "Parameter": 63
+}&__EntityParamsList__={"Parameter":63}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430227
+nonce: 680300466
+signature: 2D110B96BAA77F315A1BFEE29232DADE
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,329 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430310
+nonce: 1456188622
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,368 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.0240159秒
+            Action参数：obj={
+  "Parameter": 64
+}&__EntityParamsList__={"Parameter":64}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430310
+nonce: 1456188622
+signature: 6A0A3E1F725A3E7B31C00BC42D801778
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,411 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430404
+nonce: 1688072905
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,454 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.0240156秒
+            Action参数：obj={
+  "Parameter": 65
+}&__EntityParamsList__={"Parameter":65}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430404
+nonce: 1688072905
+signature: 2843331FDDEC5498388DEA1000799F6B
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,503 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430497
+nonce: 798057369
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,575 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.0190123秒
+            Action参数：obj={
+  "Parameter": 66
+}&__EntityParamsList__={"Parameter":66}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430497
+nonce: 798057369
+signature: D6F66C421123A8F10B2B2EF1AA2BF035
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,596 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.0010011秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430590
+nonce: 2055525480
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,621 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.015006秒
+            Action参数：obj={
+  "Parameter": 67
+}&__EntityParamsList__={"Parameter":67}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430590
+nonce: 2055525480
+signature: A4DFB002AA823DC321539984BC7E56AC
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,642 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430637
+nonce: 2123309626
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,674 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.022013秒
+            Action参数：obj={
+  "Parameter": 68
+}&__EntityParamsList__={"Parameter":68}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430637
+nonce: 2123309626
+signature: EB46D242AED224070CB4479071A2AC5B
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,691 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430688
+nonce: 1358141926
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,716 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.0170113秒
+            Action参数：obj={
+  "Parameter": 69
+}&__EntityParamsList__={"Parameter":69}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430688
+nonce: 1358141926
+signature: A159622941828DC7681DB1BE94B8A9A9
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,747 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430741
+nonce: 689290217
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,767 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.0140093秒
+            Action参数：obj={
+  "Parameter": 70
+}&__EntityParamsList__={"Parameter":70}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430741
+nonce: 689290217
+signature: E2E5EAB9701E6BB1058F4B35A1E194A9
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,783 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430779
+nonce: 371810399
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,807 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.0160095秒
+            Action参数：obj={
+  "Parameter": 71
+}&__EntityParamsList__={"Parameter":71}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430779
+nonce: 371810399
+signature: 04E2BA45F63A1A25AB0260391594DF35
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,822 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430818
+nonce: 1176230400
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,844 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.0140082秒
+            Action参数：obj={
+  "Parameter": 72
+}&__EntityParamsList__={"Parameter":72}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430818
+nonce: 1176230400
+signature: 0018FDBA853B79D11A5491782D33C747
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,860 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430856
+nonce: 858750582
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,881 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.0140097秒
+            Action参数：obj={
+  "Parameter": 73
+}&__EntityParamsList__={"Parameter":73}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430856
+nonce: 858750582
+signature: 380D5B1095DDEBB5E4AC103D7D6002B2
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,896 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.0010011秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430892
+nonce: 444954773
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-04 23:00:30,910 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:GeturlDaras
+            开始时间：17-7-4 下午 11:00:30
+            结束时间：17-7-4 下午 11:00:30
+            总 时 间：0.0060032秒
+            Action参数：obj={
+  "Parameter": 74
+}&__EntityParamsList__={"Parameter":74}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499180430892
+nonce: 444954773
+signature: 5788DFD32DFE0FB546980AA3FE46A837
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 

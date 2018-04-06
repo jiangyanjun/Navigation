@@ -1,0 +1,117 @@
+﻿
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Base.cshtml";
+    ViewBag.Title = "网址管理维护";
+    ViewBag.Keyword = "科布尔 是科技社区";
+    ViewBag.Description = "科布尔 让人人都成为老司机";
+}
+<style type="text/css">
+    .initloadImg {
+        display: none;
+    }
+</style>
+<div class="gray-bg">
+    <div style="margin:10px">
+        <div class="ibox ibox-content">
+            <div class="row form-group">
+                <div class="col-sm-3">
+                    <input type="button" class="btn btn-primary dim" value="网址检测" onclick="Url_Check()" id="urlCheckTest" />
+                    <div id="urlCheckTestLoad" class="initloadImg"><img src="~/Content/images/load/load1.gif" /></div>
+                </div>
+                <div class="col-sm-3">
+                    <input type="button" class="btn btn-primary dim" value="图标生成" onclick="UrlIcomeDonwn()" id="urlicomedonwn" />
+                    <div id="urlicomedonwnImg" class="initloadImg"><img src="~/Content/images/load/load1.gif" /></div>
+                </div>
+                <div class="col-sm-3">
+                    <input type="button" class="btn btn-primary dim" value="网址安全检测" onclick="WebSiteSecurityCheck()" id="websitesecuritycheck" />
+                    <div id="websitesecuritycheckImg" class="initloadImg"><img src="~/Content/images/load/load1.gif" /></div>
+                </div>
+            </div>
+        </div><hr />
+        <hr />
+        <div style="height:50px"></div>
+    </div>
+    <script>
+        function Url_Check() {
+            $("#urlCheckTest").attr({ "disabled": "disabled" });
+            $("#urlCheckTestLoad").show();
+            try {
+                $.ajax({
+                    type: "post",
+                    url: "/AJAXRequestAPI/UrlCheck",
+                    dataType: 'json',
+                    async: true,
+                    success: function (result) {
+                        $("#urlCheckTestLoad").hide();
+                        $("#urlCheckTest").removeAttr("disabled");
+                        alert(result);
+                    },
+                    error: function (err) {
+                        $("#urlCheckTestLoad").hide();
+                        $("#urlCheckTest").removeAttr("disabled");
+                        alert(err);
+                    },
+                });
+            } catch (e) {
+                $("#urlCheckTestLoad").hide();
+                $("#urlCheckTest").removeAttr("disabled");
+                alert(e);
+            }
+        }
+        function UrlIcomeDonwn() {
+            $("#urlicomedonwn").attr({ "disabled": "disabled" });
+            $("#urlicomedonwnImg").show();
+            try {
+                $.ajax({
+                    type: "post",
+                    url: "/AJAXRequestAPI/UrlIcomeDonwn",
+                    dataType: 'json',
+                    async: true,
+                    success: function (result) {
+                        $("#urlicomedonwnImg").hide();
+                        $("#urlicomedonwn").removeAttr("disabled");
+                        alert(result);
+                    },
+                    error: function (err) {
+                        $("#urlicomedonwnImg").hide();
+                        $("#urlicomedonwn").removeAttr("disabled");
+                        alert(err);
+                    },
+                });
+            } catch (e) {
+                $("#urlicomedonwnImg").hide();
+                $("#urlicomedonwn").removeAttr("disabled");
+                alert(e);
+            }
+        }
+        function WebSiteSecurityCheck() {
+            $("#websitesecuritycheck").attr({ "disabled": "disabled" });
+            $("#websitesecuritycheckImg").show();
+            try {
+                $.ajax({
+                    type: "post",
+                    url: "/AJAXRequestAPI/WebSiteSecurityCheck",
+                    dataType: 'json',
+                    async: true,
+                    success: function (result) {
+                        $("#websitesecuritycheckImg").hide();
+                        $("#websitesecuritycheck").removeAttr("disabled");
+                        alert(result);
+                    },
+                    error: function (err) {
+                        $("#websitesecuritycheckImg").hide();
+                        $("#websitesecuritycheck").removeAttr("disabled");
+                        alert(err);
+                    },
+                });
+            } catch (e) {
+                $("#websitesecuritycheckImg").hide();
+                $("#websitesecuritycheck").removeAttr("disabled");
+                alert(e);
+            }
+        }
+    </script>
+</div>
+
+
+

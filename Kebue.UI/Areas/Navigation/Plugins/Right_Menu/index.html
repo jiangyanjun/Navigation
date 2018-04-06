@@ -1,0 +1,36 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery右侧多功能top返回顶部代码-聚合分享效果演示www.juheweb.com</title>
+    <link rel="stylesheet" type="text/css" href="skin/default/css/base.css?v=606" />
+    <script type="text/javascript" src="skin/default/js/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="skin/default/js/common.js?v=725"></script>
+    <script type="text/javascript">
+        //base
+        var _baseUrl = '';
+        var baseJSUrl = 'skin/default/js/';
+        var baseCSSUrl = 'skin/default/css/';
+    </script>
+</head>
+<body id="home" style="height:3000px;">
+    <script type="text/javascript">
+        ds.Dialog.defaults.iconBasePath = 'skin/default/images/';
+        function showInfoTip(content, type, onhide) {
+            var icons = { success: 'success.png', info: 'info.png' };
+            var icon = icons[type] || 'error.png';
+            return ds.dialog({
+                title: '消息提示',
+                content: content,
+                onhide: onhide,
+                onyes: true,
+                icon: icon,
+                timeout: 3,
+                width: 200
+            });
+        }
+        ds.loadScript(baseJSUrl + 'quick_links.js');
+    </script>
+</body>
+
+</html>

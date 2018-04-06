@@ -1,0 +1,121 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb" manifest="cache.appcache">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico">
+    <title>数据搜索 - 让数据搜索更简单</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="//hm.baidu.com/hm.js?b169f904ade5ef8ef30b1f93eb03f0ef";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="微信指数,百度指数,微指数,淘宝指数,指数,电影指数,票房数据,医药数据,泄露数据,数据搜索,元数据" />
+    <meta name="description" content="数据搜索——科布尔出品!为数据控、学术汪、特殊癖好者提供多种多样而又快速便捷的元数据搜索渠道,是你的数据搜索第一站!" />
+    <meta name="revised" content="Chong, 2015/10/11/" />
+    <meta name="author" content="kebue.com" />
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico" />
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script src="http://lib.sinaapp.com/js/jquery-ui/1.10.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/jquery.mCustomScrollbar.css" />
+    <link href="~/Content/css/data.css" type="text/css" rel="stylesheet" />
+    <script src="~/Content/js/config.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <script type="text/javascript">
+ 		if(localStorage.style === 'icon') {
+ 			$(document.body).addClass('icon-style');
+ 		}
+    </script>
+    <div id="nav">
+        <!--<h3 class="descr">科布尔</h3>-->
+        <ul id="skin-nav">
+            <li><a class="logo" href="http://kebue.com/"><img src="http://www.kebue.com//images/kebue.ico"></a></li>
+            <li><a href="~/Search" target="_blank"><i style="color:#77C159;" class="fa fa-flash"></i> 快搜</a></li>
+            <li><a href="~/Search/Scholar" target="_blank"><i style="color:#A262E8" class="fa fa-mortar-board"></i> 学术搜索</a></li>
+            <li><a href="~/Search/Image" target="_blank"><i style="color:#FF6700" class="fa fa-picture-o"></i> 图搜</a></li>
+            <li id="skin">
+                <i style="color:#23CF5F" class="fa fa-leaf"></i> 皮肤
+                <ul id="skin-subnav">
+                    <li><a href="http://ww3.sinaimg.cn/mw690/b1601727gw1ezqpc5my4zj203k03k742.jpg">PixelWeave</a></li>
+                    <li><a href="http://ww2.sinaimg.cn/large/b1601727gw1ezq65qnyfcj20go0goaar.jpg">CongruentPentagon</a></li>
+                    <li><a href="http://ww3.sinaimg.cn/large/b1601727gw1ezq65rn8arj209q09q3yu.jpg">retina_wood</a></li>
+                    <li><a href="http://ww2.sinaimg.cn/large/b1601727gw1ezqpc1fkp7j202s02rmwx.jpg">batthern</a></li>
+                    <li><a href="http://ww2.sinaimg.cn/large/b1601727gw1ezqpc1rghbj206403ugli.jpg">brickwall</a></li>
+                    <li><a href="http://ww1.sinaimg.cn/large/b1601727gw1ezqpc237v0j201v02s0rd.jpg">cubes</a></li>
+                    <li><a href="http://ww2.sinaimg.cn/large/b1601727gw1ezqpc38d02j202804gweb.jpg">graphy</a></li>
+                    <li><a href="http://ww2.sinaimg.cn/mw690/b1601727gw1ezqpc3kal5j20m20hwq4t.jpg">grey</a></li>
+                    <li><a href="http://ww3.sinaimg.cn/mw690/b1601727gw1ezqpc4vz82j208c08cjs2.jpg">leather</a></li>
+                    <li><a href="http://ww3.sinaimg.cn/mw690/b1601727gw1ezqpc5b696j206y06ydft.jpg">NiceSnow</a></li>
+                    <li><a href="http://ww3.sinaimg.cn/mw690/b1601727gw1ezqpc64uezj20ar05lq3b.jpg">ravenna</a></li>
+                </ul>
+            </li>
+            <li><i class="fa fa-exchange"></i>&nbsp;<a id="translateLink"></a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="left-nav">
+            <ul id="foo" class="chongbuluo">
+                <li id="wechat"><img src="https://res.wx.qq.com/mpres/htmledition/images/favicon218877.ico" /><a data="http://bbs.chongbuluo.com/wechat.html">微信指数</a></li>
+                <li id="baidu"><img src="http://index.baidu.com/favicon.ico" /><a data="http://index.baidu.com/">百度指数</a></li>
+                <li id="weibo"><img src="http://data.weibo.com/favicon.ico" /><a data="http://data.weibo.com/index">微指数</a></li>
+                <li id="1688"><img src="http://gtms02.alicdn.com/tps/i2/TB1Den5HpXXXXbwXVXXjznUFXXX-16-16.ico" /><a data="http://index.1688.com/">阿里指数</a></li>
+                <li id="youku"><img src="http://index.youku.com/3-2/img/favicon_index.ico" /><a data="http://index.youku.com/">视频指数</a></li>
+                <li id="sogou"><img src="http://logo.www.sogou.com/images/logo2014/new/favicon.ico" /><a data="http://zhishu.sogou.com/">搜狗指数</a></li>
+                <li id="bitauto"><img src="http://www.bitauto.com/favicon.ico" /><a data="http://datamodel.bitauto.com/">汽车指数</a></li>
+                <li id="gov"><img src="http://data.stats.gov.cn/images/favourite.ico" /><a data="http://data.stats.gov.cn/">国家数据</a></li>
+                <li id="talkingdata"><img src="http://www.talkingdata.com/favicon.ico" /><a data="http://www.talkingdata.com/index/#/mobileIndex/zh_cn">移动观象台</a></li>
+                <li id="cbooo"><img src="http://www.cbooo.cn/favicon.ico" /><a data="http://www.cbooo.cn/">票房数据</a></li>
+                <!--<li id="nsfc"><img src="http://or.nsfc.gov.cn/nsfc.ico" /><a data="http://or.nsfc.gov.cn/">自然科学</a></li>-->
+                <li id="norsecorp"><img src="http://map.norsecorp.com/favicon.ico" /><a data="http://map.norsecorp.com/">网络攻击</a></li>
+                <li id="360"><img src="http://vis.360.cn/img/favicon.ico" /><a data="http://vis.360.cn/open/fishsite/">网络诈骗</a></li>
+                <li id="tecent"><img src="http://3gimg.qq.com/tencentMapTouch/lbs/qqmap_big_data/images/favicon.ico" /><a data="http://heat.qq.com/qianxi.php">腾讯位置大数据</a></li>
+                <!--放下偷刀(盗)，立地成佛；尊重原作者的劳动成果也是对您自身人格的尊重-->
+                <!--今后凡以任何形式盗取或变相盗取本站程序者，我随即会直接将你本人的所有私人信息公开到网络上！2016.11.01虫子宣-->
+                <li id="amap"><img src="http://report.amap.com/favicon.ico" /><a data="http://report.amap.com/">城市交通</a></li>
+                <li id="sfda"><img src="http://www.cherry.cn/favicon.ico" /><a data="http://app2.sfda.gov.cn/~/Search/Datap/gzcxSearch.do">食品药品</a></li>
+                <li id="yaozh"><img src="http://www.yaozh.com/favicon.ico" /><a data="http://db.yaozh.com/">药智数据</a></li>
+                <li id="daimugua"><img src="http://index.baidu.com/favicon.ico" /><a data="http://trends.baidu.com/ncee">高考预测</a></li>
+                <li id="iqiyi"><img src="http://ww4.sinaimg.cn/large/b1601727gw1ezq5yrisymj200w00wwe9.jpg" /><a data="http://index.iqiyi.com/">爱奇艺指数</a></li>
+                <li id="tongji"><img src="http://tongji.baidu.com/favicon.ico" /><a data="http://tongji.baidu.com/data/district">百度统计</a></li>
+                <li id="nasdaq"><img src="http://www.nasdaq.com/images/qfav.ico" /><a data="http://www.nasdaq.com/zh">纳斯达克指数</a></li>
+                <li id="umindex"><img src="http://www.umindex.com/images/favicon.ico" /><a data="http://www.umindex.com/">友盟指数</a></li>
+                <li id="nsii"><img src="http://www.verycd.com/favicon.ico?v=2" /><a data="http://www.nsii.com.cn/">标本</a></li>
+                <li id="cfh"><img src="http://www.cfh.ac.cn/favicon.ico" /><a data="http://www.cfh.ac.cn/Spdb/spsearch.aspx?aname=&AspxAutoDetectCookieSupport=1">物种</a></li>
+                <li id="qgtong"><img src="http://www.qgtong.com/favicon.ico" /><a data="http://www.qgtong.com/so/Search.asp">海关百搜</a></li>
+                <li id="iso315"><img src="http://ww3.sinaimg.cn/large/b1601727gw1ezpvccma4kj202g02gt8l.jpg" /><a data="http://www.iso315.com/">防伪数据</a></li>
+                <li id="openlaw"><img src="http://static.07law.com/common/images/logo/openlaw/blue/16.png" /><a data="http://openlaw.cn/">OpenLaw</a></li>
+            </ul>
+            <script type="text/javascript">
+    	var c = localStorage.content;
+    	if(c) {
+    		$("#foo")[0].innerHTML = c;
+    	}
+            </script>
+            <script src="~/Content/js/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script>$(".left-nav").mCustomScrollbar({theme:"minimal"});</script>
+        </div>
+        <div class="main">
+            <iframe id="engine" name="engine" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" style="background-color:#fff"></iframe>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="http://www.kebue.com/" target="_blank">科布尔出品</a>
+        <span>&copy; 2013-2017 Chongbuluo</span>
+        <a href="http://www.miibeian.gov.cn/" target="_blank">陕ICP备</a>
+        <a href="/Navigation" target="_blank">老司机导航</a>
+    </div>
+    <link href="http://7q5dsg.com1.z0.glb.clouddn.com/search/csshake.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/ui-dialog.css" />
+    <script src="http://7q5dsg.com1.z0.glb.clouddn.com/search/dialog-min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/messenger.css" />
+    <link rel="stylesheet" type="text/css" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/messenger-theme-ice.css" />
+    <script src="http://7q5dsg.com1.z0.glb.clouddn.com/search/messenger.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="~/Content/js/color.js"></script>
+    <script src="http://chong.qiniudn.com/js/chinese_convert.js"></script>
+</body>
+</html>

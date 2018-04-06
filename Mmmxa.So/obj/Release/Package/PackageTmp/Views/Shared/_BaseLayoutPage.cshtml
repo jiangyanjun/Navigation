@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html manifest="cache.appcache">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="revised" content="Chong, 2015/10/11/" />
+    <meta name="author" content="kebue.com" />
+    <meta name="keywords" content=@ViewBag.Keyword />
+    <meta name="description" content=@ViewBag.Description />
+    <title>@ViewBag.Titile</title>
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="stylesheet" type="text/css" href="http://www.kebue.com//images/kebue.ico" />
+</head>
+<body>
+    <div>
+        @Html.Partial("~/Views/PartialPage/Layout/_PartialPageHeader.cshtml");
+        <div class="container">
+            @RenderBody()
+        </div>
+        @Html.Partial("~/Views/PartialPage/Layout/_PartialPageFoot.cshtml");
+    </div>
+</body>
+</html>

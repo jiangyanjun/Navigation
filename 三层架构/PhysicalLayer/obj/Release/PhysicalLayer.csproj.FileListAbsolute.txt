@@ -1,0 +1,14 @@
+E:\工作室\sh\Mmmxa.So\navigation\三层架构\PhysicalLayer\bin\Release\PhysicalLayer.dll
+E:\工作室\sh\Mmmxa.So\navigation\三层架构\PhysicalLayer\bin\Release\PhysicalLayer.pdb
+E:\工作室\sh\Mmmxa.So\navigation\三层架构\PhysicalLayer\obj\Release\PhysicalLayer.csprojResolveAssemblyReference.cache
+E:\工作室\sh\Mmmxa.So\navigation\三层架构\PhysicalLayer\obj\Release\PhysicalLayer.dll
+E:\工作室\sh\Mmmxa.So\navigation\三层架构\PhysicalLayer\obj\Release\PhysicalLayer.pdb
+E:\工作室\sh\Mmmxa.So\navigation\三层架构\PhysicalLayer\bin\Release\CommonLayer.dll
+E:\工作室\sh\Mmmxa.So\navigation\三层架构\PhysicalLayer\bin\Release\CommonLayer.pdb
+E:\工作室\新项目\navigation\三层架构\PhysicalLayer\bin\Release\PhysicalLayer.dll
+E:\工作室\新项目\navigation\三层架构\PhysicalLayer\bin\Release\PhysicalLayer.pdb
+E:\工作室\新项目\navigation\三层架构\PhysicalLayer\bin\Release\CommonLayer.dll
+E:\工作室\新项目\navigation\三层架构\PhysicalLayer\bin\Release\CommonLayer.pdb
+E:\工作室\新项目\navigation\三层架构\PhysicalLayer\obj\Release\PhysicalLayer.csprojResolveAssemblyReference.cache
+E:\工作室\新项目\navigation\三层架构\PhysicalLayer\obj\Release\PhysicalLayer.dll
+E:\工作室\新项目\navigation\三层架构\PhysicalLayer\obj\Release\PhysicalLayer.pdb

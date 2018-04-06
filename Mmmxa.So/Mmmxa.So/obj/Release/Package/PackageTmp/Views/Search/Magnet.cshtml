@@ -1,0 +1,169 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb" manifest="cache.appcache">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico">
+    <title>资源搜索</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="磁力搜索,kindle电子书,BT搜索,种子搜索,磁力,资源搜索,磁力链接,磁力下载" />
+    <meta name="description" content="资源搜索——科布尔出品!为广大电影爱好者、资源党、特殊癖好者提供多种多样而又快速便捷的搜索渠道,是你的磁力搜索第一站!" />
+    <meta name="revised" content="Chong, 2015/10/11/" />
+    <meta name="author" content="kebeu.com" />
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico" />
+    <script type="text/javascript" src="http://7q5dsg.com1.z0.glb.clouddn.com/search/jquery-1.9.1.min.js"></script>
+    <script src="http://lib.sinaapp.com/js/jquery-ui/1.10.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/jquery.mCustomScrollbar.css" />
+    <link href="~/Content/css/meg.css" rel="stylesheet" />
+    <script src="~/Content/js/color.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        if (localStorage.style === 'icon') {
+            $(document.body).addClass('icon-style');
+        }
+    </script>
+    <div id="nav">
+        <!--<h3 class="descr">科布尔</h3>-->
+        <ul id="skin-nav">
+            <li>
+                <a class="logo" href="http://kebue.com/">
+                    <img src="http://www.kebue.com//images/kebue.ico">
+                </a>
+            </li>
+            <li>
+                <a href="/Navigation" title="老司机导航" target="_blank">
+                    <i style="color:#00A1D6" class="fa fa-star"></i> 老司机导航
+                </a>
+            </li>
+            <li>
+                <a href="~/Search" target="_blank">
+                    <i style="color:#666666;" class="fa fa-flash"></i> 快搜
+                </a>
+            </li>
+            <li>
+                <a href="~/Search/Scholar" target="_blank">
+                    <i style="color:#666666" class="fa fa-mortar-board"></i> 学术搜索
+                </a>
+            </li>
+            <li>
+                <a href="~/Search/Data" target="_blank">
+                    <i style="color:#666666" class="fa fa-cubes"></i> 数据搜索
+                </a>
+            </li>
+            <li>
+                <a href="~/Search/Image" target="_blank">
+                    <i style="color:#666666" class="fa fa-picture-o"></i> 图搜
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="left-nav">
+            <ul id="foo" class="chongbuluo">
+                <li id="baidu">
+                    <img src="~/Image/ico/pacman.png" />
+                    <a data="http://bbs.chongbuluo.com/pan.html">资源收割</a>
+                </li>
+                <li id="moviejie">
+                    <img src="https://moviejie.com/resource/images/favicon.ico" />
+                    <a data="http://bbs.chongbuluo.com/film.html">电影街</a>
+                </li>
+                <li id="mao">
+                    <img src="http://7jprb0.com1.z0.glb.clouddn.com/icon.png" />
+                    <a data="http://www.ziyuanmao.com/">资源猫</a>
+                </li>
+                <li id="cupfox">
+                    <img src="https://m.cupfox.com/static/images/icon.png" />
+                    <a data="https://m.cupfox.com/">茶杯狐</a>
+                </li>
+                <li id="panc">
+                    <img src="http://wx1.sinaimg.cn/small/b1601727gy1fe7157peanj200w00w3y9.jpg" />
+                    <a data="https://www.panc.cc/">胖次</a>
+                </li>
+                <li id="torrentz2">
+                    <img src="https://torrentz2.eu/favicon.ico" />
+                    <a data="https://torrentz2.eu/">Torrentz2</a>
+                </li>
+                <li id="xilinjie">
+                    <img src="/images/xilinjie.ico" />
+                    <a data="http://www.xilinjie.com/">西林街</a>
+                </li>
+                <li id="pubmed">
+                    <img src="http://www.jq22.com/favicon.ico" />
+                    <a data="http://www.atugu.com/">阿土古</a>
+                </li>
+                <li id="daimugua">
+                    <img src="http://ww2.sinaimg.cn/large/b1601727gw1ez600a6wwnj200w00wmwx.jpg" />
+                    <a data="http://md5.daimugua.com/">呆木瓜</a>
+                </li>
+                <li id="verypan">
+                    <img src="http://www.coder100.com/baidufavicon.ico" />
+                    <a data="http://www.verypan.com/">VeryPan</a>
+                </li>
+                <li id="makedie">
+                    <img src="http://assrt.net/favicon.ico" />
+                    <a data="http://assrt.net/">字幕</a>
+                </li>
+                <li id="acgsou">
+                    <img src="http://cdn.aixifan.com/ico/favicon.ico" />
+                    <a data="http://www.acgsou.com/">ACG搜</a>
+                </li>
+                <li id="007">
+                    <img src="http://wangpan007.com/favicon.ico" />
+                    <a data="http://wangpan007.com/">网盘007</a>
+                </li>
+                <li id="tokyotosho">
+                    <img src="http://ttcdn.info/favicon.ico" />
+                    <a data="http://www.tokyotosho.info/">東京図書館</a>
+                </li>
+
+            </ul>
+            <div id="state">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- BT
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:160px;height:600px"
+                     data-ad-client="ca-pub-2768071208062273"
+                     data-ad-slot="5915243346"></ins><script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>-->
+            </div>
+            <script type="text/javascript">
+                var c = localStorage.content;
+                if (c) {
+                    $("#foo")[0].innerHTML = c;
+                }
+            </script>
+            <script src="~/Content/js/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script>$(".left-nav").mCustomScrollbar({ theme: "minimal" });</script>
+        </div>
+        <div class="main">
+            <iframe id="engine" name="engine" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" style="background-color:#fff"></iframe>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="http://www.kebue.com/" target="_blank">科布尔出品</a>
+        <a href="http://www.miibeian.gov.cn/" target="_blank">陕ICP备14001577-1</a>
+        <a href="/Navigation" target="_blank">老司机导航</a>
+    </div>
+    <link href="http://7q5dsg.com1.z0.glb.clouddn.com/search/csshake.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/ui-dialog.css" />
+    <script src="http://7q5dsg.com1.z0.glb.clouddn.com/search/dialog-min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/messenger.css" />
+    <link rel="stylesheet" type="text/css" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/messenger-theme-ice.css" />
+    <script src="http://7q5dsg.com1.z0.glb.clouddn.com/search/messenger.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="~/Content/js/color.js"></script>
+    <script src="http://chong.qiniudn.com/js/chinese_convert.js"></script>
+    <!--放下偷刀(盗)，立地成佛；尊重原作者的劳动成果也是对您自身人格的尊重-->
+    <!--今后凡以任何形式盗取或变相盗取本站程序者，我随即会直接将你本人的所有私人信息公开到网络上！2016.11.01虫子宣-->
+
+</body>
+</html>

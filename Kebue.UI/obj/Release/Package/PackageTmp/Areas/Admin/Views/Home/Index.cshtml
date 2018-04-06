@@ -1,0 +1,386 @@
+﻿@using PhysicalLayer
+@using System.Linq;
+@{
+    Layout = null;
+    var menuList = ViewBag.menu;
+    var t = ViewBag.menuType;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>科布尔后台管理系统</title>
+    <meta name="keywords" content=科布尔 />
+    <meta name="description" content=科布尔，老司机导航，是程序员的搜索第一站，科小智,机器人,智能机器人，科技社区,科布尔是一个面向开发者的知识分享社区 />
+    @RenderPage("~/Views/Shared/_comm.cshtml");
+    <link href="~/Areas/Admin/Script/css/easyui.css" rel="stylesheet" />
+    <script src="~/Areas/Admin/Script/js/jquery-1.7.2.min.js"></script>
+    <script src="~/Areas/Admin/Script/js/jquery.easyui.min.js"></script>
+    <style type="text/css">
+        body {
+            font: 12px/20px "微软雅黑", "宋体", Arial, sans-serif, Verdana, Tahoma;
+            padding: 0;
+            margin: 0;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            text-decoration: none;
+        }
+
+        .cs-north {
+            height: 30px;
+            background: #B3DFDA;
+        }
+
+        .cs-north-bg {
+            width: 100%;
+            height: 100%;
+            background: url(themes/gray/images/header_bg.png) repeat-x;
+        }
+
+        .cs-north-logo {
+            height: 40px;
+            padding: 15px 0px 0px 5px;
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .cs-west {
+            width: 200px;
+            padding: 0px;
+            border-left: 1px solid #99BBE8;
+        }
+
+        .cs-south {
+            height: 25px;
+            background: url('../../Areas/Admin/Script/images/panel_title.gif') repeat-x;
+            padding: 0px;
+            text-align: center;
+        }
+
+        .cs-navi-tab {
+            padding: 5px;
+            width: 100%;
+        }
+
+        .cs-tab-menu {
+            width: 120px;
+        }
+
+        .cs-home-remark {
+            padding: 10px;
+        }
+
+        .tp {
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+
+        .tp-right {
+            margin-right: 10px;
+            float: right;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .b_Index_man {
+            background-color: #18C8F6;
+            color: white;
+            font-size: 18px;
+        }
+
+        .text-xs {
+            font-size: 22px;
+        }
+
+        .text-info_count {
+            font-size: 22px;
+            color: red;
+            margin: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        function addTab(title, url) {
+            if ($('#tabs').tabs('exists', title)) {
+                $('#tabs').tabs('select', title);//选中并刷新
+                var currTab = $('#tabs').tabs('getSelected');
+                var url = $(currTab.panel('options').content).attr('src');
+                if (url != undefined && currTab.panel('options').title != 'Home') {
+                    $('#tabs').tabs('update', {
+                        tab: currTab,
+                        options: {
+                            content: createFrame(url)
+                        }
+                    })
+                }
+            } else {
+                var content = createFrame(url);
+                $('#tabs').tabs('add', {
+                    title: title,
+                    content: content,
+                    closable: true
+                });
+            }
+            tabClose();
+        }
+        function createFrame(url) {
+            var s = '<iframe scrolling="auto" frameborder="0"  src="' + url + '" style="width:100%;height:100%;"></iframe>';
+            return s;
+        }
+        function tabClose() {
+            /*双击关闭TAB选项卡*/
+            $(".tabs-inner").dblclick(function () {
+                var subtitle = $(this).children(".tabs-closable").text();
+                $('#tabs').tabs('close', subtitle);
+            })
+            /*为选项卡绑定右键*/
+            $(".tabs-inner").bind('contextmenu', function (e) {
+                $('#mm').menu('show', {
+                    left: e.pageX,
+                    top: e.pageY
+                });
+
+                var subtitle = $(this).children(".tabs-closable").text();
+
+                $('#mm').data("currtab", subtitle);
+                $('#tabs').tabs('select', subtitle);
+                return false;
+            });
+        }
+        //绑定右键菜单事件
+        function tabCloseEven() {
+            //刷新
+            $('#mm-tabupdate').click(function () {
+                var currTab = $('#tabs').tabs('getSelected');
+                var url = $(currTab.panel('options').content).attr('src');
+                if (url != undefined && currTab.panel('options').title != 'Home') {
+                    $('#tabs').tabs('update', {
+                        tab: currTab,
+                        options: {
+                            content: createFrame(url)
+                        }
+                    })
+                }
+            })
+            //关闭当前
+            $('#mm-tabclose').click(function () {
+                var currtab_title = $('#mm').data("currtab");
+                $('#tabs').tabs('close', currtab_title);
+            })
+            //全部关闭
+            $('#mm-tabcloseall').click(function () {
+                $('.tabs-inner span').each(function (i, n) {
+                    var t = $(n).text();
+                    if (t != 'Home') {
+                        $('#tabs').tabs('close', t);
+                    }
+                });
+            });
+            //关闭除当前之外的TAB
+            $('#mm-tabcloseother').click(function () {
+                var prevall = $('.tabs-selected').prevAll();
+                var nextall = $('.tabs-selected').nextAll();
+                if (prevall.length > 0) {
+                    prevall.each(function (i, n) {
+                        var t = $('a:eq(0) span', $(n)).text();
+                        if (t != 'Home') {
+                            $('#tabs').tabs('close', t);
+                        }
+                    });
+                }
+                if (nextall.length > 0) {
+                    nextall.each(function (i, n) {
+                        var t = $('a:eq(0) span', $(n)).text();
+                        if (t != 'Home') {
+                            $('#tabs').tabs('close', t);
+                        }
+                    });
+                }
+                return false;
+            });
+            //关闭当前右侧的TAB
+            $('#mm-tabcloseright').click(function () {
+                var nextall = $('.tabs-selected').nextAll();
+                if (nextall.length == 0) {
+                    //msgShow('系统提示','后边没有啦~~','error');
+                    alert('后边没有啦~~');
+                    return false;
+                }
+                nextall.each(function (i, n) {
+                    var t = $('a:eq(0) span', $(n)).text();
+                    $('#tabs').tabs('close', t);
+                });
+                return false;
+            });
+            //关闭当前左侧的TAB
+            $('#mm-tabcloseleft').click(function () {
+                var prevall = $('.tabs-selected').prevAll();
+                if (prevall.length == 0) {
+                    alert('到头了，前边没有啦~~');
+                    return false;
+                }
+                prevall.each(function (i, n) {
+                    var t = $('a:eq(0) span', $(n)).text();
+                    $('#tabs').tabs('close', t);
+                });
+                return false;
+            });
+
+            //退出
+            $("#mm-exit").click(function () {
+                $('#mm').menu('hide');
+            })
+        }
+        $(function () {
+            tabCloseEven();
+            $('.cs-navi-tab').click(function () {
+                var $this = $(this);
+                var href = $this.attr('src');
+                var title = $this.text();
+                addTab(title, href);
+            });
+        });
+        function btnOutLogin() {
+            var msg = "您真的确定要退出后台系统吗？\n\n请确认！";
+            if (confirm(msg) == true) {
+                $.post("../User/OutLogin", function (result) {
+                    window.location.href = "../../Admin/User/Login";
+                });
+            } else {
+                return false;
+            }
+        }
+    </script>
+</head>
+<body class="easyui-layout">
+    <div region="north" border="true" class="cs-north" style="background-color:#18C8F6">
+        <div class="tp" style="text-align:center">
+            <h4>科布尔，科技社区,科布尔分享知识</h4>
+        </div>
+        <div class="tp">
+            <div class="tp-right">
+                @{
+                    if (ViewBag.UserName != null && ViewBag.UserName.UserAccount != null)
+                    {
+                        <i onclick="btnOutLogin()" style="font-size:16px;font-weight:900;font-style:normal;color:blue">
+                            @if (ViewBag.UserName != null)
+                            {
+                                @ViewBag.UserName.UserAccount
+                            }
+                        </i>
+                    }
+                }
+                欢迎您 <span class="dl-log-user"></span><a href="###" title="退出系统" class="dl-log-quit">
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div region="west" border="true" split="true" title="科布尔后台管理系统" class="cs-west">
+
+        <div class="easyui-accordion" fit="true" border="false">
+            @if (t != null && menuList != null)
+            {
+                foreach (string x in t)
+                {
+                    if (menuList != null)
+                    {
+            <div title="@x">
+                @foreach (S_Menu item in menuList)
+                            {
+                                if (item.Types == x)
+                                {
+                <div>
+                    <div style="border-bottom:1px solid #B3DFDA;padding:5px">
+                        <a href="javascript:void(0);" src="@item.Url" class="cs-navi-tab">@item.Name</a>
+                    </div>
+                </div>
+                                }
+                            }
+            </div>
+                    }
+                }
+            }
+        </div>
+    </div>
+    <div id="mainPanle" region="center" border="true" border="false">
+        <div id="tabs" class="easyui-tabs" fit="true" border="false">
+            <div title="首页">
+                <div class="cs-home-remark">
+                    <div class="b_Index_man">
+                        @*<link href="~/Areas/Admin/Plugins/Admin/css/bootstrap.min.css" rel="stylesheet">*@
+                        <link href="~/Areas/Admin/Plugins/Admin/css/style.css" rel="stylesheet">
+                        <div class="wrapper wrapper-content">
+                            <div class="col-sm-4">
+                                <div class="row row-sm text-center">
+                                    <div class="col-xs-12">
+                                        <div class="panel padder-v item">
+                                            <div class="text-info_count">@ViewBag.CountTool[0].UrlCount</div>
+                                            <span class="text-muted text-xs">今日访问</span>
+                                            <div class="top text-right w-full">
+                                                <i class="fa fa-caret-down text-warning m-r-sm"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="panel padder-v item">
+                                            <div class="text-info_count">@ViewBag.CountTool[1].UrlCount</div>
+                                            <span class="text-muted text-xs">历史访问</span>
+                                            <div class="top text-right w-full">
+                                                <i class="fa fa-caret-down text-warning m-r-sm"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="panel padder-v item">
+                                            <div class="text-info_count">@ViewBag.CountTool[2].UrlCount</div>
+                                            <span class="text-muted text-xs">网址数量</span>
+                                            <div class="bottom text-left">
+                                                <i class="fa fa-caret-up text-warning m-l-sm"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="panel padder-v item">
+                                            <div class="text-info_count">@ViewBag.CountTool[3].UrlCount</div>
+                                            <span class="text-muted text-xs">网址类型数量</span>
+                                            <div class="top text-right w-full">
+                                                <i class="fa fa-caret-down text-warning m-r-sm"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div region="south" border="false" class="cs-south">科布尔后台管理系统</div>
+    <div id="mm" class="easyui-menu cs-tab-menu">
+        <div id="mm-tabupdate">刷新</div>
+        <div class="menu-sep"></div>
+        <div id="mm-tabclose">关闭</div>
+        <div id="mm-tabcloseother">关闭其他</div>
+        <div id="mm-tabcloseall">关闭全部</div>
+    </div>
+</body>
+</html>

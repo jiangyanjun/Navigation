@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    @RenderPage("~/Views/PartialPage/Admin/Layout/_Script.cshtml")
+    <script>
+        function AddTab(title, href) {
+            var config = {
+                title: title,
+                href: href
+            };
+            kebue_admin_tab.addTab(config);
+        }
+    </script>
+</head>
+<body  class="fixed-sidebar">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            @*<div class="span12">
+               
+            </div>*@
+            @RenderBody()
+        </div>
+    </div>
+</body>
+@RenderPage("~/Views/PartialPage/Admin/Layout/_FootScript.cshtml")
+</html>

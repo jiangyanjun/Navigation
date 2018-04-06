@@ -1,0 +1,497 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    @RenderPage("~/Areas/Admin/Views/Shared/_BoostrapTable_Script.cshtml")
+    <title>Url</title>
+</head>
+<body>
+    <div>
+        <div class="panel-body" style="padding-bottom:0px;">
+            <table class="col-md-12">
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><label class="btn btn-info btn-rounded"><input type="radio" name="radStatus_Search" onclick="infoLoad()" value="0">不通</label>&nbsp;&nbsp;</td>
+                    <td><label class="btn btn-success btn-rounded"><input type="radio" name="radStatus_Search" onclick="infoLoad()" value="1" checked>正常</label>&nbsp;&nbsp;</td>
+                    <td><label class="btn btn-warning btn-rounded"><input type="radio" name="radStatus_Search" onclick="infoLoad()" value="2">涉黄</label>&nbsp;&nbsp;</td>
+                    <td><label class="btn btn-danger btn-rounded btn-outline"><input type="radio" name="radStatus_Search" onclick="infoLoad()" value="3">删除</label>&nbsp;&nbsp;</td>
+                    <td><label class="btn btn-info btn-rounded"><input type="radio" name="radStatus_Search" onclick="infoLoad()" value="4">危险</label>&nbsp;&nbsp;</td>
+                    <td><label class="btn btn-primary btn-rounded"><input type="radio" name="radStatus_Search" onclick="infoLoad()" value="5">新建</label>&nbsp;&nbsp;</td>
+                    <td><label class="btn btn-default btn-rounded"><input type="radio" name="radStatus_Search" onclick="infoLoad()" value="6">未定义</label>&nbsp;&nbsp;</td>
+                    <td>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="模糊搜索……" id="txtSearchUrl">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" onclick="infoLoad()">Search Go!</button>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="12">
+                        <div id="kebue_admin_url_manager_table" class="table-hover"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 模态框（Modal） -->
+        <div class="modal fade" id="myModalModify" onsubmit="submitFun();" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title">
+                            信息维护
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal m-t" id="fommyModalModify">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">网址：</label>
+                                <div class="col-sm-8">
+                                    <input id="txt_Url" class="form-control" name="txt_Url" type="url">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">名字：</label>
+                                <div class="col-sm-8">
+                                    <input id="txt_Name" name="txt_Name" class="form-control" type="text" aria-required="true" aria-invalid="false">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">图标：</label>
+                                <div class="col-sm-8">
+                                    <input id="txt_IconImg" name="txt_IconImg" class="form-control" type="url" aria-required="true" aria-invalid="false">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">类型：</label>
+                                <div class="col-sm-8">
+                                    <select id="txt_Type" name="txt_Type" class="form-control">
+                                        @{
+                                            var type = ViewBag.type;
+                                            if (type != null)
+                                            {
+                                                foreach (var item in type)
+                                                {
+                                                    <option value="@item.Id">@item.Name</option>
+                                                }
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">描述：</label>
+                                <div class="col-sm-8">
+                                    <input id="txt_Desc" name="txt_Desc" class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-3 control-label">安全检测Json：</label>
+                                <div class="col-sm-8">
+                                    <div style="height:100px; max-height:150px;overflow:auto;padding:10px;border:0.1px solid #FFFFFF"><span id="txt_check" /></div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="hidden" id="hdId" name="hdid" />
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    关闭
+                                </button>
+                                <button type="button" class="btn btn-primary" onclick="submitFun()">
+                                    提交更改
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+        <!-- 状态修改模态框（Modal） -->
+        <div class="modal fade" id="myStatusEditModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            网址状态修改
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <label class="btn btn-info btn-rounded">
+                            <input type="radio" name="radStatus" value="0">不通
+                        </label>
+                        <label class="btn btn-success btn-rounded">
+                            <input type="radio" name="radStatus" value="1">正常
+                        </label>
+                        <label class="btn btn-warning btn-rounded">
+                            <input type="radio" name="radStatus" value="2">涉黄
+                        </label>
+                        <label class="btn btn-danger btn-rounded btn-outline">
+                            <input type="radio" name="radStatus" value="3">删除
+                        </label>
+                        <label class="btn btn-danger btn-rounded">
+                            <input type="radio" name="radStatus" value="4">危险
+                        </label>
+                        @*<label class="btn btn-primary btn-rounded">
+                            <input type="radio" name="radStatus" value="5">新建
+                            </label>*@
+                        <label class="btn btn-default btn-rounded">
+                            <input type="radio" name="radStatus" value="6">未定义
+                        </label>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="hidden" id="hidId" />
+                        <input type="hidden" id="hidStatus" />
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            关闭
+                        </button>
+                        <button type="button" class="btn btn-primary" id="btnStatusEdit">
+                            提交更改
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+
+        <script>
+            $(function () {
+                //1.初始化Table
+                var oTable = new TableInit();
+                oTable.Init();
+                //2.初始化Button的点击事件
+                var oButtonInit = new ButtonInit();
+                oButtonInit.Init();
+            });
+            function infoLoad() {
+                $('#kebue_admin_url_manager_table').bootstrapTable('refresh');
+            }
+            var TableInit = function () {
+                var oTableInit = new Object();
+                //初始化Table
+                oTableInit.Init = function () {
+                    $('#kebue_admin_url_manager_table').bootstrapTable({
+                        url: "../AJAXRequestAPI/Report?method=geturlresult",//请求后台的URL（*）
+                        method: 'GET',                      //请求方式（*）
+                        toolbar: '#toolbar',                //工具按钮用哪个容器
+                        striped: true,                      //是否显示行间隔色
+                        cache: true,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+                        pagination: true,                   //是否显示分页（*）
+                        sortable: true,                     //是否启用排序
+                        sortOrder: "asc",                   //排序方式
+                        queryParams: oTableInit.queryParams,//传递参数（*）
+                        sidePagination: "server",           //分页方式：client客户端分页，server服务端分页（*）
+                        pageNumber: 1,                       //初始化加载第一页，默认第一页
+                        pageSize: 10,                       //每页的记录行数（*）
+                        pageList: [10, 25, 50, 100, 500, 1000],        //可供选择的每页的行数（*）
+                        search: true,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
+                        strictSearch: true,
+                        showColumns: true,                  //是否显示所有的列
+                        showRefresh: true,                  //是否显示刷新按钮
+                        minimumCountColumns: 1,             //最少允许的列数
+                        clickToSelect: true,                //是否启用点击选中行
+                        // height: 700,                        //行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度
+                        uniqueId: "Id",                     //每一行的唯一标识，一般为主键列
+                        showToggle: true,                    //是否显示详细视图和列表视图的切换按钮
+                        cardView: false,                    //是否显示详细视图
+                        detailView: false,                   //是否显示父子表
+                        trimOnSearch: false,                //设置为 true 将允许空字符搜索
+                        showFooter: false,                    //是否显示列脚
+                        showPaginationSwitch: true,             //是否显示 数据条数选择框
+                        idField: "Id",
+                        columns: [
+                        //{ checkbox: true },
+                        { field: "Id", title: "Id", visible: false, align: "center", valign: "middle", sortable: "true" },
+                        { field: "Url", title: "网址", align: "center", valign: "middle", sortable: "true" },
+                        { field: "Operation", title: "测试", align: "center", valign: "middle", sortable: "true" },
+                        { field: "Name", title: "名称", align: "center", valign: "middle", sortable: "true" },
+                        { field: "SortDesc", title: "排序", align: "center", valign: "middle", sortable: "true" },
+                        { field: "Source", title: "来源", align: "center", valign: "middle", sortable: "true" },
+                        { field: "Status", title: "状态", align: "center", valign: "middle", sortable: "true" },
+                        { field: "Title", title: "描述", align: "center", valign: "middle", sortable: "true" },
+                        { field: "Types", title: "类型", align: "center", valign: "middle", sortable: "true" }
+                            //,
+                            // {
+                            //     field: 'operate',
+                            //     title: 'Item Operate',
+                            //     align: 'center',
+                            //     events: operateEvents,
+                            //     formatter: operateFormatter
+                            // }
+                        ],
+                    });
+                };
+                window.oper
+                //得到查询的参数
+                oTableInit.queryParams = function (params) {
+                    var temp = {   //这里的键的名字和控制器的变量名必须一直，这边改动，控制器也需要改成一样的
+                        pare: params["search"],
+                        limit: params.limit,   //页面大小
+                        offset: params.offset,  //页码
+                        starTime: $("[name='radStatus_Search']:checked").val(),
+                        endTime: $("#txtSearchUrl").val()
+                    };
+                    return temp;
+                };
+                return oTableInit;
+            };
+            var ButtonInit = function () {
+                var oInit = new Object();
+                var postdata = {};
+                oInit.Init = function () {
+                    $(document).ready(function () {
+                        //$("#btn_add").click(function () {
+                        //    $('#groupName').attr("disabled", false);
+                        //    $("#select_ParentNode").show();
+                        //    $("#myModalLabel").text("New Group");
+                        //    $("#groupName").val("");
+                        //    $("#hid_selectPreadNode").val("");
+                        //    $("#hid_orgID").val("");
+                        //    $("#Selected_ChildNode").html("");
+                        //    $("#undo_ChildNode").html("");
+                        //    Newload();
+                        //    $('#myModal').modal('show');
+                        //});
+                        //$("#btn_delete").click(function () {
+                        //    $("#groupName").val("");
+                        //    $("#hid_selectPreadNode").val("");
+                        //    $("#hid_orgID").val("");
+                        //    $("#Selected_ChildNode").html("");
+                        //    $("#undo_ChildNode").html("");
+                        //    //$(".Unselected").hide();
+
+                        //    var arrselections = $("#kebue_admin_url_manager_table").bootstrapTable('getSelections');
+                        //    if (arrselections.length < 1) {
+                        //        toastr.warning("Please selectaed valid data");
+                        //        $('#kebue_admin_url_manager_table').bootstrapTable('refresh');
+                        //        return;
+                        //    }
+                        //    if (arrselections.length > 1) {
+                        //        toastr.warning("Please select one item edit");
+                        //        $('#kebue_admin_url_manager_table').bootstrapTable('refresh');
+                        //        return;
+                        //    }
+                        //    if (arrselections.length == 1) {
+                        //        $.post("../Organization/AjaxData?tyoe=Geteditroup", { SelectNode: JSON.stringify(arrselections) }, function (data) {
+                        //            var Html1 = null;
+                        //            var Html2 = null;
+                        //            //$.each(data, function (key, value) {
+                        //            //    Html += "<option value=" + key + ">" + value + "</option>";
+                        //            //});
+                        //            $(data[0]).each(function (i, item) {
+                        //                if (item.ORG_ID.length > 1 && item.ORG_SHORT_NAME.length > 1)
+                        //                    Html1 += "<option value='" + item.ORG_ID + "'>" + item.ORG_SHORT_NAME + "</option>"
+                        //            });
+                        //            $(data[1]).each(function (i, item) {
+                        //                if (item.ORG_ID.length > 1 && item.ORG_SHORT_NAME.length > 1)
+                        //                    Html2 += "<option value='" + item.ORG_ID + "'>" + item.ORG_SHORT_NAME + "</option>"
+                        //            });
+                        //            $("#groupName").val(arrselections[0]['ORG_NAME']);
+                        //            $('#groupName').attr('disabled', 'true');
+                        //            $("#select_ParentNode").hide();
+                        //            $("#myModalLabel").text("Edit Group");
+                        //            $("#hid_selectPreadNode").val(arrselections[0]['PARENT_ID']);
+                        //            $("#hid_orgID").val(arrselections[0]['ORG_ID']);
+                        //            $("#Selected_ChildNode").html(Html1);
+                        //            $("#undo_ChildNode").html(Html2);
+                        //        });
+                        //        $('#myModal').modal('show');
+                        //    }
+                        //});
+                        //$("#btnSubmit").click(function () {
+                        //    var PrentNodeId = $("#ParentNode option:selected").val()
+                        //    var groupName = $("#groupName").val();
+                        //    var ts = $("#myModalLabel").text();
+                        //    var SelectNode = new Array();
+                        //    $("#Selected_ChildNode option").each(function () {
+                        //        SelectNode.push($(this).val())
+                        //    })
+                        //    var UnSelectNode = new Array();
+                        //    $("#undo_ChildNode option").each(function () {
+                        //        UnSelectNode.push($(this).val())
+                        //    })
+                        //    if (ts == "Edit Group") {
+                        //        $.ajax({
+                        //            url: '../Organization/AjaxData?tyoe=editgroup',
+                        //            type: 'post',
+                        //            data: { PrentNodeId: $("#hid_selectPreadNode").val(), SelectNode: SelectNode, UnSelectNode: UnSelectNode, GroupName: $("#hid_orgID").val() },
+                        //            success: function (data) {
+                        //                if (data == "success") {
+                        //                    $('#kebue_admin_url_manager_table').bootstrapTable('refresh');
+                        //                    $('#myModal').modal('hide')
+                        //                    toastr.success("Edit Group Success");
+                        //                }
+                        //                else
+                        //                    toastr.error(data);
+                        //            },
+                        //            error: function (error) {
+                        //                toastr.error(error);
+                        //            }
+                        //        });
+                        //    } else {
+                        //        if (groupName == null || groupName == "") {
+                        //            toastr.error('Group Name not null'); return;
+                        //        }
+                        //        if (SelectNode == null || SelectNode == "") {
+                        //            toastr.error('not selected node'); return;
+                        //        }
+                        //        $.ajax({
+                        //            url: '../Organization/AjaxData?tyoe=newgroup',
+                        //            type: 'post',
+                        //            data: { PrentNodeId: PrentNodeId, SelectNode: SelectNode, GroupName: groupName },
+                        //            success: function (data) {
+                        //                if (data == "success") {
+                        //                    toastr.success("Create Group Success");
+                        //                    $('#myModal').modal('hide')
+                        //                    $('#kebue_admin_url_manager_table').bootstrapTable('refresh');
+                        //                }
+                        //                else
+                        //                    toastr.error(data);
+                        //            },
+                        //            error: function (error) {
+                        //                toastr.error(error);
+                        //            }
+                        //        });
+                        //    }
+
+                        //});
+                    });
+                };
+                return oInit;
+            };
+            //名称修改
+            function UrlNameUpdateSave(id) {
+                var v = $("#txtName_" + id).val();
+                if (v != null && v != "" && v.length > 0 && v != undefined) {
+                    $.post("/AJAXRequestAPI/UpadateValue", { Id: id, Value: v, type: 2 }, function (result) {
+                        $("#txtName_" + id).val(v);
+                        alert('保存成功');
+                    });
+                }
+            }
+            //网址修改
+            function UrlUpdateSave(id) {
+                var v = $("#txtUrl_" + id).val();
+                if (v != null && v != "" && v.length > 0 && v != undefined) {
+                    $.post("/AJAXRequestAPI/UpadateValue", { Id: id, Value: v, type: 3 }, function (result) {
+                        $("#txtUrl_" + id).val(v);
+                        alert('保存成功');
+                    });
+                }
+            }
+            //来源修改
+            function UrlSourceUpdateSave(id) {
+                var v = $("#txtSource_" + id).val();
+                if (v != null && v != "" && v.length > 0 && v != undefined) {
+                    $.post("/AJAXRequestAPI/UpadateValue", { Id: id, Value: v, type: 4 }, function (result) {
+                        $("#txtSource_" + id).val(v);
+                        alert('保存成功');
+                    });
+                }
+            }
+            //抬头修改
+            function UrlTitleUpdateSave(id) {
+                var v = $("#txtSource_" + id).val();
+                if (v != null && v != "" && v.length > 0 && v != undefined) {
+                    $.post("/AJAXRequestAPI/UpadateValue", { Id: id, Value: v, type: 5 }, function (result) {
+                        $("#txtSource_" + id).val(v);
+                        alert('保存成功');
+                    });
+                }
+            }
+            //修改排序
+            function btnSortSave(id) {
+                var v = $("#txtSort_" + id).val();
+                if (v != null && v != "" && v.length > 0 && v != undefined) {
+                    $.post("/AJAXRequestAPI/UpadateValue", { Id: id, Value: v, type: 1 }, function (result) {
+                        $("#txtSort_" + id).val(v);
+                        alert('保存成功');
+                    });
+                }
+            }
+            //模态框
+            function myModalModify(obj) {
+                var url = "/Areas/Admin/Models/Ajax/HandlerServices.ashx?method=geturlmodify&key=" + obj;
+                $.post(url, function (result) {
+                    $("#txt_IconImg").val(result.IconImg);
+                    $("#txt_Url").val(result.Url);
+                    $("#txt_Name").val(result.Name);
+                    $("#txt_Type").find("option[value='" + result.Types + "']").attr("selected", true);
+                    $("#txt_Desc").val(result.Title);
+                    $("#txt_check").html(result.Create_Time);
+                    $("#hdId").val(obj);
+                    $('#myModalModify').modal('show');
+                });
+
+            }
+            //模态框提交
+            function submitFun() {
+                $.post("/AJAXRequestAPI/myModalModify", $("#fommyModalModify").serialize(), function (data) {
+                    alert(data);
+                    $('#myModalModify').modal('hide');
+                });
+            }
+            //模态框 状态修改
+            function myStatusEdit(id) {
+                $("#hidId").val(id);
+                var parameter = "&key=" + id;
+                var url = "/Areas/Admin/Models/Ajax/HandlerServices.ashx?method=getcurrentobj";
+                $.getJSON("" + url + parameter, function (data) {
+                    $(":radio[name='radStatus'][value='" + data.Status + "']").prop("checked", "checked");
+                    $("#hidStatus").val(data.Status);
+                    $('#myStatusEditModal').modal('show');
+                });
+            }
+            function BtnClearClass(id)
+            {
+                $("#txtfwxtest_" + id).removeClass("btn-info");
+            }
+            $(document).ready(function () {
+                infoLoad();
+                //模态框 状态修改提交事件
+                $("#btnStatusEdit").click(function () {
+                    var status = $("input[name='radStatus']:checked").val();
+                    var id = $("#hidId").val();
+                    if (status != $("#hidStatus").val() && id != null) {
+                        $.post("/AJAXRequestAPI/UpadateUrlStatus", { Id: id, Status: status }, function (result) {
+                            $("#hidId").val(id);
+                            $("#hidStatus").val(status);
+                            $("#btnStatus" + id).removeClass("btn btn-info btn-rounded btn-success btn-warning btn-danger   btn-outlinebtn-danger  btn-primary btn-default");
+                            if (Number(status == 0)) {
+                                $("#btnStatus" + id).addClass("btn btn-info btn-rounded");
+                            } else if (Number(status == 1)) {
+                                $("#btnStatus" + id).addClass("btn btn-success btn-rounded");
+                            } else if (Number(status == 2)) {
+                                $("#btnStatus" + id).addClass("btn btn-warning btn-rounded");
+                            } else if (Number(status == 3)) {
+                                $("#btnStatus" + id).addClass("btn btn-danger btn-rounded btn-outline");
+                            } else if (Number(status == 4)) {
+                                $("#btnStatus" + id).addClass("btn btn-danger btn-rounded");
+                            } else if (Number(status == 5)) {
+                                $("#btnStatus" + id).addClass("btn btn-primary btn-rounded");
+                            } else if (Number(status == 6)) {
+                                $("#btnStatus" + id).addClass("btn btn-default btn-rounded");
+                            }
+                            $("#btnStatus" + id).html(result)
+                        });
+                    }
+                    $('#myStatusEditModal').modal('hide');
+                });
+            })
+        </script>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+﻿
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Base.cshtml";
+    ViewBag.Title = "留言管理";
+    ViewBag.Keyword = "科布尔 是科技社区";
+    ViewBag.Description = "科布尔 让人人都成为老司机";
+}
+
+<div class="ibox ibox-content">
+    <div class="row form-group">
+        <table class="row">
+            <tr>
+                <td class="col-md-3"></td>
+                <td class="col-md-2"><input type="date" id="dtQueryStar" value="@ViewBag.StarDay" /></td>
+                <td class="col-md-1"><span class="input-group-addon">到</span></td>
+                <td class="col-md-2"><input type="date" id="dtQueryEnd" value="@ViewBag.EndDay" /></td>
+                <td class="col-md-1"><button class="btn btn-primary" type="button" onclick="infoLoad()">查询</button></td>
+                <td class="col-md-3"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="row form-group">
+        <div class="col-sm-12 jqGrid_wrapper">
+            <table id="table_list"></table>
+            <div id="pager_list"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        infoLoad();
+    });
+    function infoLoad() {
+        BindInitialization();
+    }
+    function BindInitialization() {
+        var index;
+        try {
+            index = parent.layer.load(0, { shade: false });
+        } catch (e) {
+
+        }
+var url = "/Areas/Admin/Models/Ajax/HandlerServices.ashx?method=leaveamessage&key=" + $("#dtQueryStar").val() + "&key2=" + $("#dtQueryEnd").val() + "";
+        $.getJSON(url, function (data) {
+            PageInit(data);
+            $("#table_list").jqGrid('clearGridData');
+            $("#table_list").jqGrid('setGridParam', { data: data });
+            $("#table_list").trigger('reloadGrid');
+            try {
+                parent.layer.close(index);
+            } catch (e) {
+
+            }
+        });
+    }
+    function PageInit(data) {
+        $.jgrid.defaults.styleUI = 'Bootstrap';
+        $("#table_list").jqGrid({
+            data: data,
+            datatype: "local",
+            height: 450,
+            autowidth: true,
+            shrinkToFit: true,
+            rowNum: 20,
+            rowList: [10, 20, 30, 50],
+            colNames: ['名称', '内容', 'UserAgent', '日期'],
+            colModel: [
+             {
+                 name: 'Name',
+                 index: 'Name',
+                 width: 50,
+             },
+             {
+                 name: 'Content',
+                 index: 'Content',
+                 width: 200,
+             },
+             {
+                 name: 'UserAgent',
+                 index: 'UserAgent',
+                 width: 100,
+             },
+             {
+                 name: 'Create_Time',
+                 index: 'Create_Time',
+                 width: 80,
+             }
+            ],
+            pager: "#pager_list",
+            viewrecords: true,
+            caption: "留言列表"
+        });
+        $(window).bind('resize', function () {
+            var width = $('.jqGrid_wrapper').width();
+            $('#table_list').setGridWidth(width);
+        });
+    }
+</script>

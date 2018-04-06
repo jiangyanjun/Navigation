@@ -1,0 +1,121 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb" manifest="cache.appcache">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico">
+    <title>图片搜索 - 让图片搜索更简单</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="图标搜索,图片搜索,谷歌图片,百度识图,矢量图搜索,字体识别,素材搜索,图象识别" />
+    <meta name="description" content="科布尔出品！为 P图党、美工、设计师提供图标素材、图片识别以及创意灵感等搜索服务，是你的上网搜索第一站！" />
+    <meta name="revised" content="Chong, 2015/10/11/" />
+    <meta name="author" content="img.kebue.com" />
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico" />
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script src="http://libs.baidu.com/jqueryui/1.8.22/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/jquery.mCustomScrollbar.css" />
+    <link href="~/Content/css/img.css" rel="stylesheet" />
+    <script src="~/Content/js/config.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        if (localStorage.style === 'icon') {
+            $(document.body).addClass('icon-style');
+        }
+    </script>
+    <div id="nav">
+        <!--<h3 class="descr">科布尔</h3>-->
+        <ul id="skin-nav">
+            <li><a class="logo" href="http://kebue.com/"><img src="http://www.kebue.com//images/kebue.ico"></a></li>
+            <li><a href="http://kebue.com/" title="科布尔社区" target="_blank"><i style="color:#23CF5F" class="fa fa-group"></i> 科布尔社区</a></li>
+            <li><a href="~/Search" target="_blank"><i style="color:#77C159;" class="fa fa-flash"></i> 快搜</a></li>
+            <li><a href="~/Search/Scholar" target="_blank"><i style="color:#A262E8" class="fa fa-mortar-board"></i> 学术搜索</a></li>
+            <li><a href="~/Search/Data" target="_blank"><i style="color:#FCC629" class="fa fa-cubes"></i> 数据搜索</a></li>
+            <li id="skin">
+                <i style="color:#46F271" class="fa fa-leaf"></i> 皮肤
+                <ul id="skin-subnav">
+                    <li><a href="http://ww1.sinaimg.cn/large/b1601727gw1ezqpc237v0j201v02s0rd.jpg">cubes</a></li>
+                    <li><a href="http://ww2.sinaimg.cn/large/b1601727gw1ezq65qnyfcj20go0goaar.jpg">CongruentPentagon</a></li>
+                    <li><a href="http://ww3.sinaimg.cn/large/b1601727gw1ezq65rn8arj209q09q3yu.jpg">retina_wood</a></li>
+                    <li><a href="http://ww2.sinaimg.cn/large/b1601727gw1ezqpc1fkp7j202s02rmwx.jpg">batthern</a></li>
+                    <li><a href="http://ww2.sinaimg.cn/large/b1601727gw1ezqpc1rghbj206403ugli.jpg">brickwall</a></li>
+                    <li><a href="http://ww1.sinaimg.cn/mw690/b1601727gw1ezqpc2hju1j208c08cq3t.jpg">DiagonalStripedBrick</a></li>
+                    <li><a href="http://ww2.sinaimg.cn/mw690/b1601727gw1ezqpc2v6waj2046046q2s.jpg">eight_horns</a></li>
+                    <li><a href="http://ww2.sinaimg.cn/large/b1601727gw1ezqpc38d02j202804gweb.jpg">graphy</a></li>
+                    <li><a href="http://ww2.sinaimg.cn/mw690/b1601727gw1ezqpc3kal5j20m20hwq4t.jpg">grey</a></li>
+                    <li><a href="http://ww1.sinaimg.cn/mw690/b1601727gw1ezqpc4fd4ij208c09m0t3.jpg">hexellence</a></li>
+                    <li><a href="http://ww3.sinaimg.cn/mw690/b1601727gw1ezqpc4vz82j208c08cjs2.jpg">leather</a></li>
+                    <li><a href="http://ww3.sinaimg.cn/mw690/b1601727gw1ezqpc5b696j206y06ydft.jpg">NiceSnow</a></li>
+                    <li><a href="http://ww3.sinaimg.cn/mw690/b1601727gw1ezqpc5my4zj203k03k742.jpg">PixelWeave</a></li>
+                    <li><a href="http://ww3.sinaimg.cn/mw690/b1601727gw1ezqpc64uezj20ar05lq3b.jpg">ravenna</a></li>
+                </ul>
+            </li>
+            <li><i class="fa fa-exchange"></i>&nbsp;<a id="translateLink"></a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="left-nav">
+            <ul id="foo" class="chongbuluo">
+                <li id="easyicon"><img src="http://cdn-img.easyicon.net/favicon.ico" /><a data="http://www.easyicon.net/">EasyIcon</a></li>
+                <li id="gaoqing"><img src="http://www.gaoimg.com/favicon.ico" /><a data="http://www.gaoimg.com/">高清图片</a></li>
+                <li id="sougou"><img src="http://logo.www.sogou.com/images/logo2014/new/favicon.ico" /><a data="http://sucai.sogou.com/">搜狗素材</a></li>
+                <li id="tuyu"><img src="http://www.hituyu.com/favicon.png" /><a data="http://www.hituyu.com/">网页背景</a></li>
+                <li id="pixabay"><img src="http://7q5dsg.com1.z0.glb.clouddn.com//favicon/pixabay/favicon.png" /><a data="https://pixabay.com/">Pixabay</a></li>
+                <li id="hei"><img src="http://www.baidu.com/favicon.ico" /><a data="http://shitu.baidu.com/">百度识图</a></li>
+                <li id="ninja"><img src="http://www.iconninja.com/public/css/favicon.ico" /><a data="http://www.iconninja.com/">Icon Ninja</a></li>
+                <!--<li id="google"><img src="http://7q5dsg.com1.z0.glb.clouddn.com/favicon/favicon.ico"><a data="https://ggso.in/imghp" target="_blank">谷歌图搜</a></li>-->
+                <li id="vector"><img src="http://vector.me/static/images/favicon.ico" /><a data="http://vector.me/">Vector</a></li>
+                <li id="findicons"><img src="http://findicons.com/favicon.ico" /><a data="http://findicons.com/">FindIcons</a></li>
+                <li id="iconfont"><img src="http://www.iconfont.cn/favicon.ico" /><a data="http://www.iconfont.cn/" target="_blank">IconFont</a></li>
+                <li id="iconarchive"><img src="http://www.iconarchive.com/favicon-16x16.png" /><a data="http://www.iconarchive.com/">IconArchive</a></li>
+                <li id="freeimages"><img src="http://images.freeimages.com/static/images/favicon/32x32.png" /><a data="http://cn.freeimages.com/">FreeImages</a></li>
+                <li id="pngimg"><img src="http://pngimg.com/favicon.ico" /><a data="http://pngimg.com/img/vegetables">透明素材</a></li>
+                <li id="veryicon"><img src="http://www.veryicon.com/favicon.ico" /><a data="http://www.veryicon.com/">VeryIcon</a></li>
+                <li id="foter"><img src="http://foter.com/img/favicon.ico" /><a data="http://foter.com/">Foter</a></li>
+                <li id="picfindr"><img src="http://vector.me/static/images/favicon.ico" /><a data="http://www.picfindr.com/">PicFindr</a></li>
+                <li id="incogna"><img src="http://www.incogna.com/favicon.ico" /><a data="http://www.incogna.com/#random">Incogna</a></li>
+                <li id="visualhunt"><img src="http://7q5dsg.com1.z0.glb.clouddn.com//favicon/visualhunt/favicon.ico" /><a data="http://visualhunt.com/">VisualHunt</a></li>
+                <li id="freepik"><img src="http://www.freepik.com/favicon.png" /><a data="http://www.freepik.com/">Freepik</a></li>
+                <li id="ui-cloud"><img src="http://ui-cloud.com/favicon.ico" /><a data="http://ui-cloud.com/">UICloud</a></li>
+                <li id="saucenao"><img src="http://saucenao.com/favicon.ico" /><a data="http://saucenao.com/">SauceNAO</a></li>
+                <li id="icons8"><img src="https://maxst.icons8.com/favicon.ico" /><a data="https://icons8.com/">Icons8</a></li>
+                <li id="ascii2d"><img src="https://ascii2d.net/assets/favicon-461e7af86f6c1a73f716cf8c729e65d6164851b66470932d01ef928ebbaed6ba.ico" /><a data="https://ascii2d.net/" target="_blank">动漫反向搜索</a></li>
+
+            </ul>
+            <script type="text/javascript">
+                var c = localStorage.content;
+                if (c) {
+                    $("#foo")[0].innerHTML = c;
+                }
+            </script>
+            <script src="~/Content/js/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script>$(".left-nav").mCustomScrollbar({ theme: "minimal" });</script>
+        </div>
+        <div class="main">
+            <iframe id="engine" name="engine" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" style="background-color:#fff"></iframe>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="" target="_blank">科布尔出品</a>
+        <span>&copy; 2013-2017 Chongbuluo</span>
+        <a href="http://www.miibeian.gov.cn/" target="_blank">陕ICP备</a>
+        <a href="~/Search/Navigation" target="_blank">老司机导航</a>
+    </div>
+    <link href="http://7q5dsg.com1.z0.glb.clouddn.com/search/csshake.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/ui-dialog.css" />
+    <script src="http://7q5dsg.com1.z0.glb.clouddn.com/search/dialog-min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/messenger.css" />
+    <link rel="stylesheet" type="text/css" href="http://7q5dsg.com1.z0.glb.clouddn.com/search/messenger-theme-ice.css" />
+    <script src="http://7q5dsg.com1.z0.glb.clouddn.com/search/messenger.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="~/Content/js/color.js"></script>
+    <script src="http://chong.qiniudn.com/js/chinese_convert.js"></script>
+    <!--今后凡以任何形式盗取或变相盗取本站程序者，我随即会直接将你本人的所有私人信息公开到网络上！2016.11.01虫子宣-->
+</body>
+</html>

@@ -1,0 +1,272 @@
+﻿@{
+    Layout = null;
+    var list = ViewData["listResult"] as List<PhysicalLayer.U_Url_List>;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta name="referrer" content="always">
+    @*<base target="_blank">*@
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="revised" content="Chong, 2017/06/07/" />
+    <meta name="author" content="kebue.com" />
+    <meta name="keywords" content="科布尔，导航，程序员，搜索，老司机导航，网址，网址导航，科技，科技社区，分享，分享社区" />
+    <meta name="description" content="科布尔，老司机导航，让人人都成为老司机,学术,快搜,搜索引擎，微指数,淘宝指数,指数,电影指数,票房数据,医药数据,泄露数据,数据搜索,元数据,数据搜索，为数据控、渠道,是你的数据搜索第一站，文献检索,学术社区,学术导航,谷歌学术,学术，程序员，谷歌图片,百度识图,矢量图搜索,字体识别,素材搜索,图象识别,科布尔出品" />
+    <title>科布尔，老司机导航，让人人都成为老司机</title>
+    <meta name="360-site-verification" content="745d607f29ebc0a5d100035194f059e5" />
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="shortcut icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="icon" href="http://www.kebue.com//images/kebue.ico">
+    <link rel="stylesheet" type="text/css" href="http://www.kebue.com//images/kebue.ico" />
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link href="~/Content/css/Main.css" rel="stylesheet" />
+    <link href="~/Content/css/menu.css" rel="stylesheet" />
+
+
+    <style type="text/css">
+        .lba {
+            line-height: 30px;
+            height: 30px;
+            text-align: center;
+            font-family: 微软雅黑;
+            color: #333;
+            width: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .kebue_h {
+            color: blue;
+            font-weight: 800;
+        }
+
+        .kebue_t {
+            margin: 1px;
+            text-align: left;
+        }
+    </style>
+    <script>
+        (function () {
+            var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?b70132fa6209ab8fc4dc0944514a81b5" : "https://jspassport.ssl.qhimg.com/11.0.1.js?b70132fa6209ab8fc4dc0944514a81b5";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+</head>
+<body style="background-color:white">
+    <div class="container" id="kebue_Top">
+        <div class="row">
+            <div id="kebue_Left_Nav_Menu" class="hidden">
+                <ul>@Html.Raw(ViewBag.Types)</ul>
+            </div>
+            <div class="row" id="kebue_Heaser">
+                <div class="row" style="height:50px">
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <a title="科布尔 老司机导航" href="http://kebue.com/"><img src="~/Image/ico/kebue.png" /></a>&nbsp;&nbsp;
+                            <a title="科布尔 老司机导航" href="http://kebue.com/"><img src="~/Image/ico/lsjdh.png" /></a>
+                        </div>
+                        <br />
+                    </div>
+                    <div class="col-sm-8">
+                        <form action="https://www.baidu.com/s" target="_blank">
+                            <div class="input-group">
+                                <input id="search-input" class="form-control info" type="text" autocomplete="off" maxlength="100" name="word" placeholder="老司机告诉你：搜你想搜的" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-info" type="submit">百度一下!</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="menus g-bg5 g-grid">
+                        <li class="g-gc first active" data-key="index">
+                            <a alog-alias="menus" target="_blank" monkey="menus" class="link g-fc5 g-fc5h g-bg13" data-httpslink="off" href="http://kebue.com/" target="_self">首页</a>
+                        </li>
+                        <li class="g-gc" data-key="tv_kp">
+                            <a alog-alias="menus" target="_blank" monkey="menus" class="link g-fc20h" data-pagelets="hao123-bodyct" href="http://kebue.com/chat/Index">聊天机器人</a>
+                        </li>
+                        <li class="g-gc" data-key="movie_kp">
+                            <a alog-alias="menus" target="_blank" monkey="menus" class="link g-fc20h" data-pagelets="hao123-bodyct" href="http://tx.kebue.com/Home/Piano">WEB钢琴</a>
+                        </li>
+                        <li class="g-gc" data-key="bagua_kp">
+                            <a alog-alias="menus" target="_blank" monkey="menus" class="link g-fc20h" data-pagelets="hao123-bodyct" href="http://kebue.com/Home/Index">博客</a>
+                        </li>
+                        <li class="g-gc" data-key="xyx_kp">
+                            <a alog-alias="menus" target="_blank" monkey="menus" class="link g-fc20h" data-pagelets="hao123-bodyct" href="http://kebue.com/Home/whale">鲸 鱼</a>
+                        </li>
+                        <li class="g-gc" data-key="tejia_kp">
+                            <a alog-alias="menus" monkey="menus" class="link g-fc20h" data-pagelets="hao123-bodyct" href="http://tx.kebue.com/Home/LoveTree">程序员求婚</a>
+                        </li>
+                        <li class="g-gc" data-key="military_kp">
+                            <a alog-alias="menus" target="_blank" monkey="menus" class="link g-fc20h" data-pagelets="hao123-bodyct" href="http://www.cnblogs.com/">博客园</a>
+                        </li>
+                        <li class="g-gc" data-key="game_kp">
+                            <a alog-alias="menus" target="_blank" monkey="menus" class="link g-fc20h" data-pagelets="hao123-bodyct" href="http://msdn.itellyou.cn/">微软下载</a>
+                        </li>
+                        <li class="g-gc width-nr-last" data-key="travel_kp">
+                            <a alog-alias="menus" target="_blank" monkey="menus" class="link g-fc20h" data-pagelets="hao123-bodyct" href="https://www.oschina.net/">开源中国</a>
+                        </li>
+                        <li class="g-gc width-nr-last" data-key="travel_kp">
+                            <a alog-alias="menus" target="_blank" monkey="menus" class="link g-fc20h" data-pagelets="hao123-bodyct" href="https://github.com/">GitHub</a>
+                        </li>
+                    </ul>
+                    <div class="g-grid g-bg11 g-br13 govsite-top">
+                        <span class="g-gc g-fc20 g-br6 g-brwr title">权威推荐</span>
+                        <a class="g-gc" target="_blank" href="http://www.people.com.cn/">人民网</a>
+                        <a class="g-gc" target="_blank" href="http://www.xinhuanet.com/">新华网</a>
+                        <a class="g-gc" target="_blank" href="http://www.cctv.com/">央视网</a>
+                        <a class="g-gc" target="_blank" href="http://www.cri.cn/">国际在线</a>
+                        <a class="g-gc" target="_blank" href="http://cn.chinadaily.com.cn/">中国日报</a>
+                        <a class="g-gc" target="_blank" href="http://www.china.com.cn/">中国网</a>
+                        <a class="g-gc" target="_blank" href="http://www.ce.cn/">中经网</a>
+                        <a class="g-gc" target="_blank" href="http://www.gmw.cn/">光明网</a>
+                        <a class="g-gc" target="_blank" href="http://www.cnr.cn/">央广网</a>
+                        <a class="g-gc" target="_blank" href="http://www.qstheory.cn/">求是网</a>
+                        <a class="g-gc" target="_blank" href="http://www.youth.cn/">中青网</a>
+                        <a class="g-gc" target="_blank" href="http://www.cac.gov.cn/">网信网</a>
+                        <a class="g-gc last" target="_blank" href="http://www.beijing.gov.cn/">首都之窗</a>
+                    </div>
+                    <div id="ajaxloaddata"></div>
+                </div>
+            </div>
+            <div class="row" id="kebue_footer" style="height:300px">
+                <div class="col-sm-12">
+                    <div class="footerCont">
+                        <div id="footer" style="height: 70px" data-rm="server">
+                            <div class="hao123-footer page-width g-br12 g-brwt" monkey="yedi" alog-alias="yedi">
+                                <div id="" class="g-fl">
+                                    <a class="item g-fc3 g-fc23h" href="#" title="科布尔 微信公账号欢迎关注 (如无法扫描请打开微信搜索：kebue-  ）"> <img src="~/Image/kebue_wechar.jpg" width="150" height="150" /></a>
+                                    <a class="item g-fc3 g-fc23h" href="../User/AddUrl">添加网址</a>
+                                    <a class="item g-fc3 g-fc23h" href="../User/AdminLogin">后台管理</a>
+                                    <a class="item g-fc3 g-fc23h" href="###">关于本站</a>
+                                    <a class="item g-fc3 g-fc23h" href="#">常见问题</a>
+                                    <a class="item g-fc3 g-fc23h" href="#">全站地图</a>
+                                    <span class="item g-fc3 g-fc3 item-text">陕ICP备15014626号</span>
+                                    <span class="item g-fc3 g-fc23h">违法和不良信息举报电话：010-59922822</span>
+                                    <a class="item g-fc3 g-fc23h mr12 width-nr-hide bottom-fawu " href="http://www.12377.cn/" title="中国互联网违法和不良信息举报中心">
+                                        <i class="icon icon1"></i>
+                                    </a>
+                                    <a class="item g-fc3 g-fc23h mr12 width-nr-hide bottom-fawu icon-fawu2" href="http://www.bj.cyberpolice.cn/index.jsp" title="北京市公安局网络违法犯罪举报网站">
+                                        <i class="icon icon2"></i>
+                                    </a>
+                                    <a class="item g-fc3 g-fc23h width-nr-hide bottom-fawu icon-fawu3" href="http://www.bjjubao.org/" title="北京市互联网违法和不良信息举报中心">
+                                        <i class="icon icon3"></i>
+                                    </a>
+                                    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1261990464'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1261990464%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*<script src="~/Content/Plugin/jquery-1.12.4.js"></script>*@
+    <script src="~/Content/Plugin/layer-v3.0.3/layer/layer.js"></script>
+    @*<script language="javascript" src="http://www.codefans.net/ajaxjs/jquery1.3.2.js"></script>*@
+    <script type="text/javascript">
+        //if (location.host.indexOf('kebue.com') != 0) {location.href = 'http://so.kebue.com/';}
+        function clickrate(data) {
+            LoadCliceInfo();
+            $.post("../AJAXRequestAPI/Addclickrate", { UrlId: data, UserAgents: navigator.userAgent, Ip: Kebue_ip_address.Ip, Msg: JSON.stringify(Kebue_ip_address) }, function (result) {
+            });
+        }
+        function GeturlDaras(i) {
+            $.post("/AJAXRequestAPI/GeturlDaras", { index: i }, function (data) {
+                CallBind(data);
+            });
+        }
+        function CallBind(data) {
+            $("#ajaxloaddata").append(data.msg);
+            if (data.nex != 0 || data.nex != "0") {
+                GeturlDaras(data.nex);
+            } else {
+                LoadCliceInfo();
+            }
+        }
+        var Kebue_ip_address;
+        function LoadCliceInfo() {
+            if (Kebue_ip_address == null || Kebue_ip_address == undefined || Kebue_ip_address == "" || Kebue_ip_address.length < 1) {
+                var url = 'http://chaxun.1616.net/s.php?type=ip&output=json&callback=?&_=' + Math.random();
+                $.getJSON(url, function (data) {
+                    Kebue_ip_address = data;
+                    return;
+                })
+            }
+        };
+        $(document).ready(function () {
+            GeturlDaras(0);
+        })
+
+        //var url = 'http://chaxun.1616.net/s.php?type=ip&output=json&callback=?&_=' + Math.random();
+        //if ($(window).width() < 1250)
+        //{ $("#menu").hide(); }
+        //var GetLength = function (str) {
+        //    var realLength = 0, len = str.length, charCode = -1;
+        //    for (var i = 0; i < len; i++) {
+        //        charCode = str.charCodeAt(i);
+        //        if (charCode >= 0 && charCode <= 128) realLength += 1;
+        //        else realLength += 2;
+        //    }
+        //    return realLength;
+        //};
+        //var GetLength = function (str) {
+        //    ///<summary>获得字符串实际长度，中文2，英文1</summary>
+        //    ///<param name="str">要获得长度的字符串</param>
+        //    var realLength = 0, len = str.length, charCode = -1;
+        //    for (var i = 0; i < len; i++) {
+        //        charCode = str.charCodeAt(i);
+        //        if (charCode >= 0 && charCode <= 128) realLength += 1;
+        //        else realLength += 2;
+        //    }
+        //    return realLength;
+        //};
+        //function cutstr(str, len) {
+        //    var str_length = 0;
+        //    var str_len = 0;
+        //    str_cut = new String();
+        //    str_len = str.length;
+        //    for (var i = 0; i < str_len; i++) {
+        //        a = str.charAt(i);
+        //        str_length++;
+        //        if (escape(a).length > 4) {
+        //            //中文字符的长度经编码之后大于4
+        //            str_length++;
+        //        }
+        //        str_cut = str_cut.concat(a);
+        //        if (str_length >= len) {
+        //            str_cut = str_cut.concat(".");
+        //            return str_cut;
+        //        }
+        //    }
+        //    //如果给定字符串小于指定长度，则返回源字符串；
+        //    if (str_length < len) {
+        //        return str;
+        //    }
+        //}
+    </script>
+
+
+
+
+    @Html.Partial("~/Views/PartialPage/Layout/_PartialPageRightMenu.cshtml");
+</body>
+</html>

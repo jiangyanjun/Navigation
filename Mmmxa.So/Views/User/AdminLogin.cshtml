@@ -1,0 +1,125 @@
+﻿
+@{
+    Layout = null;
+    ViewBag.Titile = "科布尔后台管理系统";
+    ViewBag.Keyword = "科布尔";
+    ViewBag.Description = "科布尔，老司机导航，是程序员的搜索第一站，科小智,机器人,智能机器人，科技社区,科布尔是一个面向开发者的知识分享社区";
+}
+<!DOCTYPE html>
+<html>
+<head>
+  
+    @RenderPage("~/Views/Shared/_ScriptCore.cshtml");
+
+    <link href="~/Content/Admin/css/font-awesome.css" rel="stylesheet">
+    <link href="~/Content/Admin/css/animate.css" rel="stylesheet">
+    <link href="~/Content/Admin/css/style.css" rel="stylesheet">
+    <link href="~/Content/Admin/css/login.css" rel="stylesheet">
+
+    
+
+    <script>
+        if (window.top !== window.self) {
+            window.top.location = window.location;
+        }
+        window.onload = function () {
+            var btn = document.getElementById("eyes_box");
+            var pass = document.getElementById("txtPwd")
+            btn.onmousedown = function () {
+                $("#eyes_box").removeClass("glyphicon-eye-open");
+                $("#eyes_box").addClass("glyphicon-eye-close");
+                pass.type = "text"
+            };
+            btn.onmouseup = btn.onmouseout = function () {
+                $("#eyes_box").removeClass("glyphicon-eye-close");
+                $("#eyes_box").addClass("glyphicon-eye-open");
+                pass.type = "password"
+            }
+        }
+    </script>
+    <style type="text/css">
+        #eyes_box {
+            width: 35px;
+            height: 28px;
+            position: relative;
+            left: 224px;
+            top: -44px;
+        }
+    </style>
+</head>
+<body class="signin">
+    <div class="signinpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <form>
+                    <h4 class="no-margins">登录：</h4>
+                    <p class="m-t-md">欢迎来到科布尔后台管理系统</p>
+                    <input type="text" class="form-control uname" placeholder="用户名" id="txtUser" />
+                    <input type="password" class="form-control" placeholder="密码" id="txtPwd" />
+                    <i id="eyes_box" class="btn btn-inverse btn-block glyphicon glyphicon-eye-open"></i>
+                    <button class="btn btn-success btn-block" id="btnAdminLogin">登录</button>
+                </form>
+            </div>
+        </div>
+        <div class="signup-footer">
+            <div class="pull-left">
+                &copy;
+                <a title="科布尔" href="http://kebue.com/"><img src="~/Image/ico/kebue.png" /></a>
+                <a title="科布尔 微信公账号欢迎关注 (如无法扫描请打开微信搜索：kebue-  ）"> <img src="~/Image/kebue_wechar.jpg" width="80" height="80" /></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btnAdminLogin").click(function () {
+                AdminLogin();
+            });
+            $('#btnAdminLogin').bind('keydown', function (event) {
+                if (event.keyCode == "13") {
+                    AdminLogin();
+                }
+            });
+        });
+        function AdminLogin() {
+            $("#btnAdminLogin").attr("disabled", "disabled");
+            var layerLoad = layer.load(0, { shade: false });
+            var user = $("#txtUser").val();
+            var pwd = $("#txtPwd").val();
+            if (user == null || user.length < 1)
+                Close(layerLoad, "用户名不可为空");
+            if (pwd == null || pwd.length < 1)
+                Close(layerLoad, "密码不可为空");
+            try {
+                $.ajax({
+                    type: "post",
+                    url: "/User/AdminLogin",
+                    dataType: 'json',
+                    async: false,
+                    data: { User: user, Pwd: pwd },
+                    success: function (result) {
+                        if (result != null && result == "2" && Number(result) > 1)
+                            Close(layerLoad, '用户或密码不正确');
+                        else window.location.href = "../Admin/Index";
+                    },
+                    error: function (err) {
+                        Close(layerLoad, '登录Ajax发生异常：' + e);
+                    },
+                });
+            } catch (e) {
+                Close(layerLoad, '登录发生异常：' + e);
+            }
+        }
+        function Close(layerLoad, e) {
+            try {
+                if (e != null && e != "" && e.length > 1 && e != undefined)
+                    alert(e);
+                layer.close(layerLoad);
+                $("#btnAdminLogin").removeAttr("disabled");
+                return;
+            } catch (e) {
+                alert(e);
+            }
+        }
+    </script>
+</body>
+</html>

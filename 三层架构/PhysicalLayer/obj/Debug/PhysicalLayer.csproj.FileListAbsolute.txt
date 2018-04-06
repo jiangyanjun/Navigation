@@ -1,0 +1,14 @@
+E:\工作室\sh\Mmmxa.So\navigation\三层架构\PhysicalLayer\bin\Debug\PhysicalLayer.dll
+E:\工作室\sh\Mmmxa.So\navigation\三层架构\PhysicalLayer\bin\Debug\PhysicalLayer.pdb
+E:\工作室\sh\Mmmxa.So\navigation\三层架构\PhysicalLayer\bin\Debug\CommonLayer.dll
+E:\工作室\sh\Mmmxa.So\navigation\三层架构\PhysicalLayer\bin\Debug\CommonLayer.pdb
+E:\工作室\sh\Mmmxa.So\navigation\三层架构\PhysicalLayer\obj\Debug\PhysicalLayer.csprojResolveAssemblyReference.cache
+E:\工作室\sh\Mmmxa.So\navigation\三层架构\PhysicalLayer\obj\Debug\PhysicalLayer.dll
+E:\工作室\sh\Mmmxa.So\navigation\三层架构\PhysicalLayer\obj\Debug\PhysicalLayer.pdb
+E:\工作室\新项目\navigation\三层架构\PhysicalLayer\bin\Debug\PhysicalLayer.dll
+E:\工作室\新项目\navigation\三层架构\PhysicalLayer\bin\Debug\PhysicalLayer.pdb
+E:\工作室\新项目\navigation\三层架构\PhysicalLayer\bin\Debug\CommonLayer.dll
+E:\工作室\新项目\navigation\三层架构\PhysicalLayer\bin\Debug\CommonLayer.pdb
+E:\工作室\新项目\navigation\三层架构\PhysicalLayer\obj\Debug\PhysicalLayer.csprojResolveAssemblyReference.cache
+E:\工作室\新项目\navigation\三层架构\PhysicalLayer\obj\Debug\PhysicalLayer.dll
+E:\工作室\新项目\navigation\三层架构\PhysicalLayer\obj\Debug\PhysicalLayer.pdb

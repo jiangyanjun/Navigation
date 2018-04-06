@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html manifest="~/cache.appcache">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="revised" content="Chong, 2015/10/11/" />
+    <meta name="author" content="kebue.com" />
+    <script src="~/Content/Plugin/Jquery/jquery-3.2.1.min.js"></script>
+    <script>
+        (function () {
+            var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?b70132fa6209ab8fc4dc0944514a81b5" : "https://jspassport.ssl.qhimg.com/11.0.1.js?b70132fa6209ab8fc4dc0944514a81b5";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+</head>
+<body>
+    <div class="container">
+        @RenderBody()
+        <script type="text/javascript">
+            var c = localStorage.content;
+            if (c) {
+                $("#foo")[0].innerHTML = c;
+            }
+        </script>
+        <script src="/Content/js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script>$(".left-nav").mCustomScrollbar({ theme: "minimal-dark" });</script>
+        @Html.Partial("~/Views/PartialPage/Layout/_PartialPageContent.cshtml");
+        @Html.Partial("~/Views/PartialPage/Layout/_PartialPageLeftFoot.cshtml");
+    </div>
+</body>
+</html>

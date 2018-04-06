@@ -1,0 +1,1381 @@
+
+ 
+记录时间：2017-07-02 19:31:54,501 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 07:31:01
+            结束时间：17-7-2 下午 07:31:50
+            总 时 间：48.5083265秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1498995053177
+nonce: 1445468166
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 20:15:54,369 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 08:15:47
+            结束时间：17-7-2 下午 08:15:54
+            总 时 间：7.3300216秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1498997746233
+nonce: 969248439
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 20:18:13,779 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 08:18:10
+            结束时间：17-7-2 下午 08:18:13
+            总 时 间：2.8589013秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1498997890787
+nonce: 757074363
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 20:21:57,648 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 08:21:55
+            结束时间：17-7-2 下午 08:21:57
+            总 时 间：2.0973954秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1498998115444
+nonce: 1466909078
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 20:25:42,903 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 08:25:38
+            结束时间：17-7-2 下午 08:25:42
+            总 时 间：4.8522327秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1498998337321
+nonce: 912184749
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 20:28:40,165 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 08:28:35
+            结束时间：17-7-2 下午 08:28:40
+            总 时 间：4.6451405秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1498998514846
+nonce: 1499070446
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 20:31:43,787 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 08:31:37
+            结束时间：17-7-2 下午 08:31:43
+            总 时 间：6.7064635秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1498998696454
+nonce: 1948489033
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 20:34:42,841 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 08:34:42
+            结束时间：17-7-2 下午 08:34:42
+            总 时 间：0.0610403秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1498998876289
+nonce: 1518612540
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 20:43:36,524 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 08:43:31
+            结束时间：17-7-2 下午 08:43:36
+            总 时 间：4.5521078秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1498999411129
+nonce: 255784201
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:02:59,667 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 09:02:52
+            结束时间：17-7-2 下午 09:02:59
+            总 时 间：7.1599969秒
+            Action参数：staffId="staffId"
+            Http请求头:Connection: keep-alive
+Accept: text/html, application/xhtml+xml, application/xml; q=0.9, image/webp, */*; q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: zh-CN, zh; q=0.8
+Cookie: UM_distinctid=15d014192400-0358de8ffbde61-474f0b20-100200-15d01419242178; CNZZDATA1261990464=1814397469-1498962424-%7C1498977212
+Host: localhost:54942
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36
+Upgrade-Insecure-Requests: 1
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:30:14,229 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 09:30:14
+            结束时间：17-7-2 下午 09:30:14
+            总 时 间：0.1260831秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499002213580
+nonce: 452045706
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:30:51,579 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScripts
+            开始时间：17-7-2 下午 09:30:17
+            结束时间：17-7-2 下午 09:30:51
+            总 时 间：33.681806秒
+            Action参数：
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499002213575
+nonce: 1284997552
+signature: E9ABB3C59C696F3D721FC5299555DEB1
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:31:09,886 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 09:31:09
+            结束时间：17-7-2 下午 09:31:09
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499002269749
+nonce: 48970353
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:31:31,389 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScript
+            开始时间：17-7-2 下午 09:31:20
+            结束时间：17-7-2 下午 09:31:31
+            总 时 间：10.9122619秒
+            Action参数：__EntityParamsList__=TestDemo
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499002269749
+nonce: 48970353
+signature: 5EB9EC6C753A33EB6748D0B1F5FDC6F3
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:32:32,133 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 09:32:32
+            结束时间：17-7-2 下午 09:32:32
+            总 时 间：0.0090064秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499002351925
+nonce: 2082326620
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:32:40,163 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScript
+            开始时间：17-7-2 下午 09:32:32
+            结束时间：17-7-2 下午 09:32:40
+            总 时 间：7.9292772秒
+            Action参数：__EntityParamsList__=TestDemo
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499002351925
+nonce: 2082326620
+signature: C9845501CB697FAD4506DA7C241027A9
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:33:41,918 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 09:33:41
+            结束时间：17-7-2 下午 09:33:41
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499002421907
+nonce: 93582882
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:42:33,390 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 09:42:33
+            结束时间：17-7-2 下午 09:42:33
+            总 时 间：0.1190793秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499002952607
+nonce: 1800469580
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:42:43,559 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScripts
+            开始时间：17-7-2 下午 09:42:33
+            结束时间：17-7-2 下午 09:42:43
+            总 时 间：9.7857403秒
+            Action参数：Id=TestDemo
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499002952598
+nonce: 1511521607
+signature: A0F85044ABD8F5E5BF5FAD07C284E73B
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:42:45,920 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 09:42:45
+            结束时间：17-7-2 下午 09:42:45
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499002965882
+nonce: 1085274637
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:52:18,892 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 09:52:18
+            结束时间：17-7-2 下午 09:52:18
+            总 时 间：0.0420279秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499003534882
+nonce: 1085274637
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:52:19,375 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScripts
+            开始时间：17-7-2 下午 09:52:19
+            结束时间：17-7-2 下午 09:52:19
+            总 时 间：0.3482314秒
+            Action参数：Id=TestDemo
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499003534879
+nonce: 2014542474
+signature: 0C6A08B78AC7DB79D7211DA407B0345E
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:52:19,397 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 09:52:19
+            结束时间：17-7-2 下午 09:52:19
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499003539386
+nonce: 821228986
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:54:51,497 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 09:54:51
+            结束时间：17-7-2 下午 09:54:51
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499003691298
+nonce: 878292676
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:54:51,837 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScripts
+            开始时间：17-7-2 下午 09:54:51
+            结束时间：17-7-2 下午 09:54:51
+            总 时 间：0.0010002秒
+            Action参数：Id=TestDemo
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499003691291
+nonce: 589344703
+signature: 48401BBAB4502C9D3EB006439BFD86BB
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:54:51,878 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 09:54:51
+            结束时间：17-7-2 下午 09:54:51
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499003691858
+nonce: 955066573
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:56:52,813 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 09:56:52
+            结束时间：17-7-2 下午 09:56:52
+            总 时 间：0.0370251秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499003812585
+nonce: 1766577507
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:59:04,078 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScripts
+            开始时间：17-7-2 下午 09:56:52
+            结束时间：17-7-2 下午 09:59:04
+            总 时 间：131.1358439秒
+            Action参数：Id=TestDemo
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499003812582
+nonce: 548361697
+signature: BFD5E064E27D81326EDEE5AF763D4D65
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:59:06,585 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 09:59:06
+            结束时间：17-7-2 下午 09:59:06
+            总 时 间：0.0010007秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499003946560
+nonce: 610785615
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:59:06,622 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScripts
+            开始时间：17-7-2 下午 09:59:06
+            结束时间：17-7-2 下午 09:59:06
+            总 时 间：0秒
+            Action参数：Id=TestDemo
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499003946560
+nonce: 610785615
+signature: 6D43784A4798F4E1A275C07EE9B1202A
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 21:59:06,698 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 09:59:06
+            结束时间：17-7-2 下午 09:59:06
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499003946658
+nonce: 2060885708
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 22:14:38,392 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 10:14:38
+            结束时间：17-7-2 下午 10:14:38
+            总 时 间：0.0890617秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499004869077
+nonce: 2046535729
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 22:14:39,946 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScripts
+            开始时间：17-7-2 下午 10:14:38
+            结束时间：17-7-2 下午 10:14:39
+            总 时 间：1.054703秒
+            Action参数：Id=TestDemo
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499004869073
+nonce: 1853903747
+signature: 4CAE5F97FF0E45063F75545F4ABD534F
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 22:14:39,987 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 10:14:39
+            结束时间：17-7-2 下午 10:14:39
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499004879964
+nonce: 1764846802
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 22:14:40,075 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScript
+            开始时间：17-7-2 下午 10:14:40
+            结束时间：17-7-2 下午 10:14:40
+            总 时 间：0.0010002秒
+            Action参数：Id=Kebue.API.Areas.Navigation.Controllers.pp&__EntityParamsList__={"Id":"TestDemo"}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499004879964
+nonce: 1764846802
+signature: 9DB7287B441BABA77366DCA727D99550
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-02 22:16:28,046 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 10:16:27
+            结束时间：17-7-2 下午 10:16:28
+            总 时 间：0.0590389秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499004987821
+nonce: 246962563
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 22:16:28,508 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScripts
+            开始时间：17-7-2 下午 10:16:28
+            结束时间：17-7-2 下午 10:16:28
+            总 时 间：0.2041359秒
+            Action参数：Id=TestDemo
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499004987819
+nonce: 150646572
+signature: D8C0376E7FB421B72E6438B2990C16B4
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 22:16:28,527 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 10:16:28
+            结束时间：17-7-2 下午 10:16:28
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499004988521
+nonce: 1953849261
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 22:16:46,599 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScript
+            开始时间：17-7-2 下午 10:16:28
+            结束时间：17-7-2 下午 10:16:46
+            总 时 间：18.0302142秒
+            Action参数：Id=Kebue.API.Areas.Navigation.Controllers.pp&__EntityParamsList__={"Id":"TestDemo"}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499004988521
+nonce: 1953849261
+signature: 831F1BCBF76B606CD1DF45744F52346A
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-02 22:21:31,046 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 10:21:30
+            结束时间：17-7-2 下午 10:21:31
+            总 时 间：0.051034秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499005290792
+nonce: 1046022336
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 22:21:31,366 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScripts
+            开始时间：17-7-2 下午 10:21:31
+            结束时间：17-7-2 下午 10:21:31
+            总 时 间：0.2141425秒
+            Action参数：Id=TestDemo
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499005290788
+nonce: 1975290173
+signature: 95DEEC4C5358158F9C6731182D483E6A
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 22:21:31,388 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 10:21:31
+            结束时间：17-7-2 下午 10:21:31
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499005291379
+nonce: 435965022
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 22:21:36,044 
+线程ID:[12] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScript
+            开始时间：17-7-2 下午 10:21:31
+            结束时间：17-7-2 下午 10:21:36
+            总 时 间：4.576046秒
+            Action参数：Id=Kebue.API.Areas.Navigation.Controllers.pp&__EntityParamsList__={"Id":"TestDemo"}
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499005291379
+nonce: 435965022
+signature: 08E532BB33CBF4A717BA11F94B26ABA8
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-02 23:07:54,538 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 11:07:54
+            结束时间：17-7-2 下午 11:07:54
+            总 时 间：0.1460972秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499008066618
+nonce: 1256465707
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 23:09:54,086 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 11:09:51
+            结束时间：17-7-2 下午 11:09:54
+            总 时 间：2.1954602秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499008190722
+nonce: 848030126
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 23:11:24,546 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 11:11:24
+            结束时间：17-7-2 下午 11:11:24
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499008255997
+nonce: 1254735002
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 23:23:49,772 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 11:23:49
+            结束时间：17-7-2 下午 11:23:49
+            总 时 间：0.1180739秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499009029132
+nonce: 352100192
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 23:25:20,836 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 11:25:20
+            结束时间：17-7-2 下午 11:25:20
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499009120809
+nonce: 790966436
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 23:27:10,729 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 11:27:10
+            结束时间：17-7-2 下午 11:27:10
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499009230686
+nonce: 1261825935
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 23:29:34,298 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 11:29:34
+            结束时间：17-7-2 下午 11:29:34
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499009374053
+nonce: 890743837
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 23:35:12,787 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScript
+            开始时间：17-7-2 下午 11:31:18
+            结束时间：17-7-2 下午 11:35:12
+            总 时 间：234.2308858秒
+            Action参数：Id=Kebue.API.Areas.Navigation.Controllers.pp&__EntityParamsList__=Key=Id&Value=TestDemo
+            Http请求头:Accept: application/json
+Accept-Encoding: gzip
+Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499009374053
+nonce: 890743837
+signature: 56F788C02ADFB50837EEF0EC5115B755
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-02 23:35:32,930 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 11:35:32
+            结束时间：17-7-2 下午 11:35:32
+            总 时 间：0秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499009732885
+nonce: 1181590628
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 23:44:57,510 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 11:44:57
+            结束时间：17-7-2 下午 11:44:57
+            总 时 间：0.0380261秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499010293993
+nonce: 1062103020
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 23:45:05,038 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 11:45:05
+            结束时间：17-7-2 下午 11:45:05
+            总 时 间：0.001001秒
+            Action参数：staffId=10000
+            Http请求头:Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499010305027
+nonce: 664219782
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 23:45:05,526 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScript
+            开始时间：17-7-2 下午 11:45:05
+            结束时间：17-7-2 下午 11:45:05
+            总 时 间：0.4242831秒
+            Action参数：Id=&__EntityParamsList__="{\"Id\":\"TestDemo\"}"
+            Http请求头:Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499010305027
+nonce: 664219782
+signature: D475812F81DECBCADDC5BFF483C52932
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 
+
+ 
+记录时间：2017-07-02 23:50:24,192 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 11:50:23
+            结束时间：17-7-2 下午 11:50:24
+            总 时 间：0.2001327秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499010623455
+nonce: 1948489033
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 23:57:55,586 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：ServiceController
+            ActionName:GetToken
+            开始时间：17-7-2 下午 11:57:55
+            结束时间：17-7-2 下午 11:57:55
+            总 时 间：0.0630415秒
+            Action参数：staffId=10000
+            Http请求头:Connection: Keep-Alive
+Pragma: no-cache
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499011069650
+nonce: 650037916
+
+            客户端IP：,
+            HttpMethod:GET
+                    
+ 
+
+ 
+记录时间：2017-07-02 23:58:40,119 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+            Action执行时间监控：
+            ControllerName：HomeController
+            ActionName:TypesScript
+            开始时间：17-7-2 下午 11:58:39
+            结束时间：17-7-2 下午 11:58:40
+            总 时 间：0.6384245秒
+            Action参数：Id=Kebue.API.Areas.Navigation.Controllers.pp&__EntityParamsList__=Key=Id&Value=TestDemo
+            Http请求头:Accept-Encoding: gzip
+Expect: 100-continue
+Host: localhost:54942
+staffid: 10000
+timestamp: 1499011069524
+nonce: 1024581424
+signature: 5E9DCB7F619B3C9BFDFBF34B0A75F607
+
+            客户端IP：,
+            HttpMethod:POST
+                    
+ 

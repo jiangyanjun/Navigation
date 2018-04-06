@@ -1,0 +1,51 @@
+﻿#kebue_admin_tab div {
+    height: 100% !important;
+}
+        .lba {
+            line-height: 30px;
+            height: 30px;
+            text-align: center;
+            font-family: 微软雅黑;
+            color: #333;
+            width: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .kebue_h {
+            color: blue;
+            font-weight: 800;
+        }
+
+        .kebue_t {
+            margin: 1px;
+            text-align: left;
+        }
+
+        .kebue_Left_Nav_Menu {
+            height: 100px;
+            overflow: auto;
+        }
+body {
+    font-family: Arial !important;
+    font-size: 16px;
+    background-color: white;
+}
+          .kebue_h span {
+                height: 100%;
+                background:blue;
+                /*width: 140px;*/
+                padding:5px;
+                display: block;
+                border-radius: 50%;
+                text-align: center;
+                /*line-height: 40px;*/
+                color: white;
+                /*font-size: 16px!important;*/
+                font-weight: 900;
+                box-shadow: 1px 1px 5px #18C8F6;
+            }
+            .kebue_h a {
+            color:white;
+            }

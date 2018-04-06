@@ -1,0 +1,130 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="Title" content="科布尔，科小智,机器人,智能机器人，科技社区,科布尔是一个面向开发者的知识分享社区">
+    <meta name="Keywords" content="科布尔，科小智,机器人,智能机器人，科技社区,科布尔是一个面向开发者的知识分享社区" />
+    <title>科布尔</title>
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="Areas/Chat/Script/css/kebue.chat.css" rel="stylesheet" />
+</head>
+<body class="container" style="background-image:url(/Content/images/image/SysBG01.gif)">
+    <div class="row" style="margin-top:20px"></div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="web-main-header">
+                <span class="web-header-logo"></span>
+                <div class="web-header-info">
+                    <h1 class="title ng-binding">科布尔，科小智陪你聊天</h1>
+                    <p class="describe ng-binding">
+                        科布尔，科小智,机器人,智能机器人，科技社区,科布尔是一个面向开发者的知识分享社区
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-10" style="background-color:white;left:15px">
+            <div style="height:300px"></div>
+            <div class="web-record-box" id="chat_msgs">
+                <!-- 聊天展示页面 开始-->
+                <div class="chat-msgs">
+                </div>
+                <!-- 聊天展示页面 结束-->
+            </div>
+
+            <div class="ueditor-input-con" style="padding: 3px;">
+                <textarea class="manual-ueditor" placeholder="请输入你要说的话"></textarea>
+            </div>
+            <div class="ueditor-send-con">
+                <input type="button" class="btn-send" value="发送" onclick="sendMsg()">
+                <span class="send-tip">支持Enter快捷键发送</span>
+            </div>
+        </div>
+        <div class="col-xs-2">
+            <!-- 常用问答功能 -->
+            <div class="web-main-sidebar-inner" style="background-color:#A4E1FB;height:460px">
+                <div class="eui-tab-01 web-sidebar-con">
+                    <ul class="tab-tt-01">
+                        <li class="cur">快捷输入</li>
+                    </ul>
+                    <div class="tab-cc-01 active">
+                        <ul class="eui-txt-list-01 fs12">
+                            <li class="list-item ng-scope click-question">
+                                <i class="no ng-binding">1.</i>
+                                <p class="cw"><a class="c ng-binding">你好</a></p>
+                            </li>
+                            <li class="list-item ng-scope click-question">
+                                <i class="no ng-binding">1.</i>
+                                <p class="cw"><a class="c ng-binding">今天天气</a></p>
+                            </li>
+                            <li class="list-item ng-scope click-question">
+                                <i class="no ng-binding">1.</i>
+                                <p class="cw"><a class="c ng-binding">哈哈</a></p>
+                            </li>
+                            <li class="list-item ng-scope click-question">
+                                <i class="no ng-binding">1.</i>
+                                <p class="cw"><a class="c ng-binding">逗比</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script>
+        $('.click-question').click(function () {
+            var msg = $(this).children('p').children('a').text();
+            $('.manual-ueditor').val(msg);
+        });
+        function sendMsg() {
+            $('.btn-send').attr('disabled', true);
+            var msg = $('.manual-ueditor').val();
+            if (msg.length <= 0) {
+                return false;
+            }
+            // 输出到屏幕
+            $('.chat-msgs').append('<div class="ng-scope"><div class="talk-item talk-a"><div class="talk-item-time ng-binding">' + getNowFormatDate() + '</div><img class="head-photo" src="/../../Content/images/image/bg3.jpg"><div class="message-text">' + msg + '</div></div></div>');
+            goBottom();
+            // 清空输入框
+            $('.manual-ueditor').val('');
+            $.get(decodeURIComponent("http%3A%2F%2Fwww.tuling123.com%2Fopenapi%2Fapi%3Fkey%3Dc4f3c14c5de44175be9b1b581cc7673c%26info%3D") + msg).success(function (data) {
+                console.log(data);
+                if (data.code == 100000) {
+                    $('.chat-msgs').append('<div class="ng-scope"><div class="talk-item talk-b ng-isolate-scope"><div class="talk-item-time ng-binding">' + getNowFormatDate() + '</div><img class="head-photo" src="/../../Content/images/image/bg6.jpg"><div class="message-text">' + data.text + '</div></div></div>');
+                } if (data.code == 200000) {
+                    $('.chat-msgs').append('<div class="ng-scope"><div class="talk-item talk-b ng-isolate-scope"><div class="talk-item-time ng-binding">' + getNowFormatDate() + '</div><img class="head-photo" src="/../../Content/images/image/bg11.jpg"><div class="message-text">' + data.text + '<a href="' + data.url + '" target="_blank">' + data.url + '</a></div></div></div>');
+                }
+                goBottom();
+                $('.btn-send').attr('disabled', false);
+            })
+        }
+        function goBottom() {
+            var chatMsgs = document.getElementById('chat_msgs');
+            chatMsgs.scrollTop = chatMsgs.scrollHeight;
+        }
+        function getNowFormatDate() {
+            var date = new Date();
+            var currentdate = date.getMonth() + "/" + date.getDay() + "  " + date.getHours() + ':' + date.getMinutes();
+            return currentdate;
+        }
+        $('.manual-ueditor').keydown(function (e) {
+            if (e.which == 13) {
+                $(".btn-send").click();
+                return false;
+            }
+        });
+    </script>
+
+</body>
+</html>
